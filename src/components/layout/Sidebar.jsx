@@ -208,14 +208,6 @@ export default function Sidebar({
           inert={!menuVisible}
           onKeyDown={handleMenuKeyDown}
         >
-          <div className="profile-menu-header" role="group" aria-label="Current profile">
-            <span className="avatar" aria-hidden="true">{profile.initials}</span>
-            <span className="profile-menu-identity">
-              <strong>{profile.name}</strong>
-              <small>{profile.role}</small>
-            </span>
-          </div>
-          <div className="profile-menu-divider" role="separator" />
           <button className="profile-menu-item" type="button" role="menuitem">
             <Settings size={16} aria-hidden="true" />
             <span>Settings</span>

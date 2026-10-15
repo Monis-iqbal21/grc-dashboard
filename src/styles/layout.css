@@ -1010,69 +1010,52 @@
   outline-offset: 2px;
 }
 .profile-chevron {
-  transform: rotate(0deg);
+  transform: rotate(180deg);
   transition: transform 180ms ease;
 }
 .profile-button[aria-expanded="true"] .profile-chevron {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
 }
 .sidebar-profile-menu {
   position: absolute;
   right: 0;
-  bottom: calc(100% + var(--space-2));
+  bottom: calc(100% - 2px);
   left: 0;
   z-index: var(--z-dropdown);
-  padding: 8px;
-  border: 1px solid var(--border-subtle);
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 8px;
+  border: 1px solid transparent;
   border-radius: var(--radius-lg);
   background: var(--sidebar-bg-bottom);
   box-shadow: var(--shadow-menu);
   opacity: 0;
   visibility: hidden;
-  transform: translateY(6px);
+  transform: translateY(10px);
   pointer-events: none;
   transition:
-    opacity 180ms ease,
-    transform 180ms ease,
-    visibility 0s linear 180ms;
+    max-height 200ms ease,
+    padding 200ms ease,
+    border-color 200ms ease,
+    opacity 200ms ease,
+    transform 200ms ease,
+    visibility 0s linear 200ms;
 }
 .sidebar-profile-menu.is-open {
+  max-height: 176px;
+  padding: 8px;
+  border-color: var(--border-subtle);
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
   pointer-events: auto;
   transition:
-    opacity 180ms ease,
-    transform 180ms ease,
+    max-height 200ms ease,
+    padding 200ms ease,
+    border-color 200ms ease,
+    opacity 200ms ease,
+    transform 200ms ease,
     visibility 0s;
-}
-.profile-menu-header {
-  display: flex;
-  align-items: center;
-  gap: 11px;
-  padding: 7px 8px 11px;
-}
-.profile-menu-header .avatar {
-  width: 36px;
-  height: 36px;
-}
-.profile-menu-identity {
-  display: flex;
-  min-width: 0;
-  flex-direction: column;
-  gap: 4px;
-}
-.profile-menu-identity strong {
-  overflow: hidden;
-  color: var(--text-primary);
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-medium);
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.profile-menu-identity small {
-  color: var(--text-muted);
-  font-size: var(--font-size-tiny);
 }
 .profile-menu-divider {
   height: 1px;
