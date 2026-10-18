@@ -63,34 +63,12 @@
 .dashboard-viewbar {
   display: flex;
   align-items: stretch;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 16px;
   min-height: 40px;
   margin: 16px 0;
   border-bottom: 1px solid var(--border-subtle);
 }
-.dashboard-refresh {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex: none;
-  gap: var(--space-token-7);
-  min-height: 34px;
-  padding: 0 var(--space-token-11);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-token-7);
-  background: var(--surface-1);
-  color: var(--text-secondary);
-  font-size: var(--font-size-xs);
-  cursor: pointer;
-  transition: border-color var(--transition-fast), color var(--transition-fast), background var(--transition-fast);
-}
-.dashboard-refresh:hover {
-  border-color: var(--border-active);
-  background: var(--surface-2);
-  color: var(--text-primary);
-}
-.dashboard-refresh svg { color: var(--blue-soft); }
 .dashboard-tabs {
   display: flex;
   align-items: stretch;
@@ -584,7 +562,6 @@
 }
 @media (max-width: 767px) {
   .dashboard-viewbar { align-items: center; gap: 8px; }
-  .dashboard-refresh { min-height: 32px; padding: 0 10px; }
   .dashboard-tabs { gap: var(--space-4); }
   .dashboard-tab { padding-right: 2px; padding-left: 2px; font-size: var(--font-size-xs); }
   .executive-posture { gap: var(--space-4); }
@@ -608,7 +585,6 @@
 }
 @media (max-width: 420px) {
   .dashboard-viewbar { gap: 8px; }
-  .dashboard-refresh { gap: 6px; font-size: var(--font-size-tiny); }
   .dashboard-tabs { gap: 12px; }
   .dashboard-tab { font-size: var(--font-size-tiny); }
   .executive-metric { grid-template-columns: 23px minmax(0, 1fr); gap: 6px; padding: 10px; }
@@ -638,7 +614,6 @@
   .cyber-shield-track { grid-column: 2 / 5; grid-row: 2; }
 }
 @media (max-width: 359px) {
-  .dashboard-refresh svg { width: 13px; height: 13px; }
   .executive-metric { padding-right: 8px; padding-left: 8px; }
   .executive-metric-value { font-size: 19px; }
   .framework-item { grid-template-columns: 36px minmax(0, 1fr) auto; column-gap: 8px; }

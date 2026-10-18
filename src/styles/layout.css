@@ -224,8 +224,7 @@
   border-radius: 0 0 var(--radius-shell) var(--radius-shell);
   cursor: pointer;
 }
-.avatar,
-.topbar-avatar {
+.avatar {
   width: 29px;
   height: 29px;
   flex: none;
@@ -377,17 +376,6 @@
   background: var(--accent-cyan);
   box-shadow: var(--shadow-indicator);
 }
-.topbar-divider {
-  height: 22px;
-  width: 1px;
-  background: var(--border-subtle);
-  margin: 0 var(--space-1);
-}
-.topbar-avatar {
-  width: 27px;
-  height: 27px;
-  font-size: var(--font-size-micro);
-}
 .menu-button {
   display: none;
 }
@@ -398,12 +386,7 @@
   min-width: 0;
   overflow: visible;
   padding: var(--space-token-21);
-  border: 1px solid var(--glass-border);
   border-radius: var(--radius-shell);
-  background: var(--glass-content-bg);
-  box-shadow: var(--glass-shadow-soft), inset 0 1px 0 var(--glass-highlight);
-  backdrop-filter: blur(var(--glass-blur-content)) saturate(115%);
-  -webkit-backdrop-filter: blur(var(--glass-blur-content)) saturate(115%);
 }
 .backdrop {
   display: none;
@@ -756,8 +739,7 @@
   }
   .topbar-search,
   .refresh-button,
-  .settings-button,
-  .topbar-divider {
+  .settings-button {
     display: none;
   }
   .topbar-actions {
@@ -766,11 +748,6 @@
   .topbar-actions .icon-button {
     width: 29px;
     height: 29px;
-  }
-  .topbar-avatar {
-    width: 25px;
-    height: 25px;
-    margin-left: var(--space-token-1);
   }
   .main-content {
     padding: var(--space-token-14) var(--space-3);

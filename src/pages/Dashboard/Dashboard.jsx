@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { RefreshCw } from 'lucide-react';
 import ExecutivePosture from './ExecutivePosture.jsx';
 import GrcOperations from './GrcOperations.jsx';
 import './Dashboard.css';
@@ -58,10 +57,6 @@ export function Dashboard() {
             GRC Operations
           </button>
         </div>
-        <button className="dashboard-refresh" type="button" aria-label="Refresh dashboard">
-          <RefreshCw size={15} aria-hidden="true" />
-          <span>Refresh</span>
-        </button>
       </div>
 
       <div

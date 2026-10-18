@@ -1,0 +1,713 @@
+.ciso-dashboard {
+  display: flex;
+  width: 100%;
+  max-width: 1720px;
+  min-width: 0;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin: 0 auto;
+  color: var(--text-primary);
+  font-family: var(--font-family-primary);
+}
+
+.ciso-workspace {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1fr);
+  overflow: hidden;
+  border: 1px solid var(--glass-border-soft);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(ellipse at 48% 4%, rgba(0, 112, 248, 0.1), transparent 45%),
+    linear-gradient(118deg, rgba(7, 20, 55, 0.82), rgba(4, 17, 51, 0.82) 54%, rgba(7, 20, 55, 0.74));
+  box-shadow: var(--shadow-panel);
+}
+
+.ciso-zone {
+  min-width: 0;
+  padding: 24px 20px 22px;
+}
+
+.ciso-zone-heading {
+  min-width: 0;
+  margin-bottom: 20px;
+}
+
+.ciso-zone-heading h2,
+.ciso-governance-ribbon__heading h2 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: -0.035em;
+  line-height: 1.25;
+}
+
+.ciso-eyebrow {
+  margin: 0 0 6px;
+  color: var(--blue-soft);
+  font-size: var(--font-size-micro);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.12em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.ciso-zone-description {
+  margin: 7px 0 0;
+  color: var(--text-secondary);
+  font-size: var(--font-size-xs);
+  line-height: 1.55;
+}
+
+.ciso-risk-posture {
+  display: flex;
+  flex-direction: column;
+}
+
+.ciso-risk-posture__hero {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: minmax(0, 1fr) 94px;
+  align-items: center;
+  gap: 10px;
+  padding: 0 0 18px;
+  border-bottom: 1px solid var(--glass-border-soft);
+}
+
+.ciso-open-risk-count {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ciso-open-risk-count strong {
+  color: var(--text-primary);
+  font-size: clamp(3.25rem, 5vw, 4.65rem);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: -0.085em;
+  line-height: 0.95;
+  font-variant-numeric: tabular-nums;
+}
+
+.ciso-open-risk-count span {
+  margin-top: 8px;
+  color: var(--text-secondary);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+.ciso-risk-ring {
+  position: relative;
+  width: 94px;
+  aspect-ratio: 1;
+  flex: none;
+}
+
+.ciso-risk-ring svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.ciso-risk-ring circle {
+  fill: none;
+  stroke-width: 7;
+}
+
+.ciso-risk-ring__track {
+  stroke: rgba(103, 119, 145, 0.28);
+}
+
+.ciso-risk-ring__value {
+  stroke: var(--warning);
+  stroke-linecap: butt;
+  filter: drop-shadow(0 0 4px rgba(246, 173, 49, 0.28));
+}
+
+.ciso-risk-ring__center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3px;
+  text-align: center;
+}
+
+.ciso-risk-ring__center strong {
+  color: var(--text-primary);
+  font-size: 18px;
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: -0.04em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.ciso-risk-ring__center small {
+  color: var(--text-secondary);
+  font-size: 10px;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0;
+}
+
+.ciso-risk-ring__center > span {
+  max-width: 68px;
+  color: var(--warning);
+  font-size: 8px;
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.15;
+}
+
+.ciso-posture-metrics {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ciso-posture-metric {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: 17px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px;
+  min-height: 43px;
+  border-bottom: 1px solid var(--glass-border-soft);
+  color: var(--text-secondary);
+  font-size: var(--font-size-xs);
+  line-height: 1.35;
+}
+
+.ciso-posture-metric:last-child { border-bottom: 0; }
+.ciso-posture-metric svg { color: var(--text-muted); }
+.ciso-posture-metric--blue svg,
+.ciso-posture-metric--blue strong { color: var(--blue-soft); }
+.ciso-posture-metric--danger svg,
+.ciso-posture-metric--danger strong { color: var(--danger); }
+.ciso-posture-metric--warning svg,
+.ciso-posture-metric--warning strong { color: var(--warning); }
+
+.ciso-posture-metric strong {
+  color: var(--text-primary);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.ciso-priority-landscape {
+  position: relative;
+  border-left: 1px solid var(--glass-border-soft);
+  background: linear-gradient(145deg, rgba(0, 112, 248, 0.075), transparent 60%);
+}
+
+.ciso-priority-landscape__heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ciso-priority-landscape__count {
+  flex: none;
+  padding: 5px 8px;
+  border: 1px solid var(--glass-border-soft);
+  border-radius: var(--radius-pill);
+  color: var(--text-muted);
+  font-size: var(--font-size-tiny);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.ciso-risk-scale {
+  margin: 0 0 2px 30px;
+  padding: 0 0 9px;
+  border-bottom: 1px solid var(--glass-border-soft);
+}
+
+.ciso-risk-scale__caption {
+  display: flex;
+  min-width: 0;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+  color: var(--text-muted);
+  font-size: var(--font-size-tiny);
+}
+
+.ciso-risk-scale__caption span:first-child {
+  color: var(--text-secondary);
+  font-weight: var(--font-weight-medium);
+}
+
+.ciso-risk-scale__caption span:last-child {
+  text-align: right;
+}
+
+.ciso-risk-scale__values {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  color: var(--text-muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 9px;
+  font-variant-numeric: tabular-nums;
+}
+
+.ciso-risk-scale__values span { text-align: center; }
+.ciso-risk-scale__values span:first-child { text-align: left; }
+.ciso-risk-scale__values span:last-child { text-align: right; }
+
+.ciso-risk-track-list {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ciso-risk-track {
+  min-width: 0;
+  padding: 12px 0 13px;
+  border-bottom: 1px solid var(--glass-border-soft);
+}
+
+.ciso-risk-track:last-child { border-bottom: 0; }
+
+.ciso-risk-track__heading {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: 22px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 9px;
+}
+
+.ciso-risk-track__rank {
+  color: var(--text-muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: var(--font-size-tiny);
+  font-variant-numeric: tabular-nums;
+}
+
+.ciso-risk-track__identity {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ciso-risk-track__id {
+  color: var(--blue-soft);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 9px;
+  line-height: 1.2;
+}
+
+.ciso-risk-track__name {
+  overflow-wrap: anywhere;
+  color: var(--text-primary);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+}
+
+.ciso-risk-track__details {
+  display: inline-flex;
+  min-width: 0;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.ciso-severity {
+  display: inline-flex;
+  min-height: 22px;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 8px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  font-size: var(--font-size-tiny);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.ciso-severity--critical {
+  border-color: rgba(239, 71, 111, 0.35);
+  background: rgba(239, 71, 111, 0.11);
+  color: var(--danger);
+}
+
+.ciso-severity--high {
+  border-color: rgba(246, 173, 49, 0.34);
+  background: rgba(246, 173, 49, 0.1);
+  color: var(--warning);
+}
+
+.ciso-risk-track__score {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.ciso-risk-track__score span {
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.ciso-risk-track__score strong {
+  color: var(--text-primary);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  font-variant-numeric: tabular-nums;
+}
+
+.ciso-risk-track__bar {
+  height: 6px;
+  margin: 9px 0 0 31px;
+  overflow: hidden;
+  border-radius: var(--radius-pill);
+  background: rgba(103, 119, 145, 0.16);
+}
+
+.ciso-risk-track__bar > span {
+  display: block;
+  width: var(--ciso-track-width);
+  height: 100%;
+  border-radius: inherit;
+  transition: width var(--transition-slow), filter var(--transition-fast);
+}
+
+.ciso-risk-track--critical .ciso-risk-track__bar > span {
+  background: linear-gradient(90deg, rgba(239, 71, 111, 0.78), var(--danger));
+  box-shadow: 0 0 12px rgba(239, 71, 111, 0.22);
+}
+
+.ciso-risk-track--high .ciso-risk-track__bar > span {
+  background: linear-gradient(90deg, rgba(246, 173, 49, 0.76), var(--warning));
+  box-shadow: 0 0 12px rgba(246, 173, 49, 0.17);
+}
+
+.ciso-risk-track:hover .ciso-risk-track__bar > span { filter: brightness(1.14); }
+
+.ciso-ai-briefing {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  border-left: 1px solid var(--glass-border-soft);
+}
+
+.ciso-ai-briefing__heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.ciso-ai-briefing__heading .ciso-eyebrow { margin-bottom: 4px; }
+.ciso-ai-briefing__heading h2 { font-size: var(--font-size-base); }
+
+.ciso-ai-briefing__mark {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  flex: none;
+  place-items: center;
+  border: 1px solid rgba(0, 112, 248, 0.24);
+  border-radius: var(--radius-md);
+  background: rgba(0, 112, 248, 0.1);
+  color: var(--blue-soft);
+}
+
+.ciso-ai-briefing__description { margin: 0 0 15px; }
+
+.ciso-briefing-composer {
+  min-width: 0;
+  margin-bottom: 14px;
+  padding: 12px;
+  border: 1px solid var(--glass-border-soft);
+  border-radius: var(--radius-md);
+  background: rgba(4, 13, 45, 0.38);
+}
+
+.ciso-briefing-composer__topline {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid var(--glass-border-soft);
+  color: var(--text-secondary);
+  font-size: var(--font-size-tiny);
+}
+
+.ciso-briefing-composer__topline > span:first-child {
+  display: inline-flex;
+  min-width: 0;
+  align-items: center;
+  gap: 6px;
+}
+
+.ciso-briefing-composer__topline svg { flex: none; color: var(--blue-soft); }
+
+.ciso-briefing-composer__state {
+  flex: none;
+  padding: 3px 6px;
+  border: 1px solid var(--glass-border-soft);
+  border-radius: var(--radius-pill);
+  color: var(--text-muted);
+  font-size: 8px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.ciso-briefing-composer > p {
+  min-height: 52px;
+  margin: 11px 0 8px;
+  color: var(--text-muted);
+  font-size: var(--font-size-tiny);
+  line-height: 1.55;
+}
+
+.ciso-briefing-composer__rule {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ciso-briefing-composer__rule i {
+  display: block;
+  width: 82%;
+  height: 3px;
+  border-radius: var(--radius-pill);
+  background: rgba(103, 119, 145, 0.13);
+}
+
+.ciso-briefing-composer__rule i:nth-child(2) { width: 65%; }
+.ciso-briefing-composer__rule i:nth-child(3) { width: 46%; }
+
+.ciso-briefing-actions {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.ciso-briefing-button {
+  display: flex;
+  min-width: 0;
+  min-height: 38px;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 10px;
+  border: 1px solid var(--glass-border-soft);
+  border-radius: var(--radius-sm);
+  background: rgba(7, 20, 55, 0.38);
+  color: var(--text-secondary);
+  font: inherit;
+  font-size: var(--font-size-tiny);
+  line-height: 1.35;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color var(--transition-fast), background var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+}
+
+.ciso-briefing-button svg { flex: none; color: var(--blue-soft); }
+.ciso-briefing-button span { min-width: 0; }
+
+.ciso-briefing-button:hover {
+  border-color: var(--border-active);
+  background: rgba(0, 112, 248, 0.07);
+  color: var(--text-primary);
+}
+
+.ciso-briefing-button:active { transform: translateY(1px); }
+
+.ciso-briefing-button:focus-visible {
+  outline: 2px solid var(--blue-primary);
+  outline-offset: 2px;
+}
+
+.ciso-briefing-button--primary {
+  min-height: 42px;
+  justify-content: flex-start;
+  border-color: rgba(0, 112, 248, 0.5);
+  background: linear-gradient(110deg, var(--blue-primary), #0864dc);
+  color: #fff;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+}
+
+.ciso-briefing-button--primary svg { color: #fff; }
+.ciso-briefing-button--primary span { flex: 1; }
+
+.ciso-briefing-button--primary:hover {
+  border-color: rgba(51, 140, 255, 0.78);
+  background: linear-gradient(110deg, #147df8, #0b6de9);
+  color: #fff;
+}
+
+.ciso-briefing-status {
+  margin: 10px 0 0;
+  color: var(--text-secondary);
+  font-size: var(--font-size-tiny);
+  line-height: 1.4;
+}
+
+.ciso-governance-ribbon {
+  overflow: hidden;
+  border: 1px solid var(--glass-border-soft);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(112deg, rgba(7, 20, 55, 0.7), rgba(11, 23, 60, 0.53));
+}
+
+.ciso-governance-ribbon__heading {
+  padding: 17px 20px 13px;
+  border-bottom: 1px solid var(--glass-border-soft);
+}
+
+.ciso-governance-ribbon__heading .ciso-eyebrow { margin-bottom: 4px; }
+.ciso-governance-ribbon__heading h2 { font-size: var(--font-size-base); }
+
+.ciso-governance-ribbon__sections {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.ciso-governance-section {
+  display: flex;
+  min-width: 0;
+  min-height: 82px;
+  align-items: center;
+  padding: 14px 20px;
+  border-right: 1px solid var(--glass-border-soft);
+}
+
+.ciso-governance-section:last-child { border-right: 0; }
+
+.ciso-governance-metric {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.ciso-governance-metric > span {
+  color: var(--text-muted);
+  font-size: var(--font-size-tiny);
+  line-height: 1.35;
+}
+
+.ciso-governance-metric > strong {
+  color: var(--text-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+
+.ciso-governance-section__paired-values {
+  display: grid;
+  width: 100%;
+  min-width: 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.ciso-governance-section__paired-values .ciso-governance-metric > strong { font-size: var(--font-size-sm); }
+
+.ciso-dashboard :where(button) { -webkit-tap-highlight-color: transparent; }
+.ciso-dashboard button:focus-visible {
+  outline: 2px solid var(--blue-primary);
+  outline-offset: 2px;
+}
+
+@media (max-width: 1279px) and (min-width: 768px) {
+  .ciso-workspace { grid-template-columns: minmax(220px, 0.72fr) minmax(0, 1.28fr); }
+  .ciso-ai-briefing {
+    grid-column: 1 / -1;
+    border-top: 1px solid var(--glass-border-soft);
+    border-left: 0;
+  }
+  .ciso-briefing-actions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .ciso-governance-ribbon__sections { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ciso-governance-section:nth-child(2) { border-right: 0; }
+  .ciso-governance-section:nth-child(-n+2) { border-bottom: 1px solid var(--glass-border-soft); }
+}
+
+@media (max-width: 767px) {
+  .ciso-dashboard { gap: var(--space-3); }
+  .ciso-workspace { grid-template-columns: minmax(0, 1fr); }
+  .ciso-zone { padding: 19px 17px; }
+  .ciso-zone-heading { margin-bottom: 16px; }
+  .ciso-risk-posture__hero { grid-template-columns: minmax(0, 1fr) 88px; }
+  .ciso-risk-ring { width: 88px; }
+  .ciso-priority-landscape,
+  .ciso-ai-briefing {
+    border-top: 1px solid var(--glass-border-soft);
+    border-left: 0;
+  }
+  .ciso-risk-track { padding: 12px 0; }
+  .ciso-risk-track__heading { grid-template-columns: 20px minmax(0, 1fr) auto; gap: 8px; }
+  .ciso-risk-track__details { gap: 8px; }
+  .ciso-risk-track__bar { margin-left: 28px; }
+  .ciso-risk-scale { margin-left: 28px; }
+  .ciso-briefing-actions { display: flex; }
+  .ciso-governance-ribbon__heading { padding: 16px 17px 12px; }
+  .ciso-governance-ribbon__sections { grid-template-columns: minmax(0, 1fr); }
+  .ciso-governance-section,
+  .ciso-governance-section:nth-child(2) {
+    min-height: 62px;
+    padding: 12px 17px;
+    border-right: 0;
+    border-bottom: 1px solid var(--glass-border-soft);
+  }
+  .ciso-governance-section:last-child { border-bottom: 0; }
+  .ciso-governance-section:not(:last-child) .ciso-governance-metric { flex-direction: row; align-items: center; }
+  .ciso-governance-section:not(:last-child) .ciso-governance-metric > strong { text-align: right; }
+  .ciso-governance-section__paired-values { gap: 18px; }
+}
+
+@media (max-width: 430px) {
+  .ciso-zone { padding: 17px 14px; }
+  .ciso-risk-posture__hero { grid-template-columns: minmax(0, 1fr) 82px; gap: 8px; }
+  .ciso-open-risk-count strong { font-size: clamp(3rem, 15vw, 3.8rem); }
+  .ciso-risk-ring { width: 82px; }
+  .ciso-risk-track__heading { grid-template-columns: 18px minmax(0, 1fr) auto; gap: 7px; }
+  .ciso-risk-track__details { gap: 6px; }
+  .ciso-severity { min-height: 21px; padding-right: 6px; padding-left: 6px; }
+  .ciso-risk-track__score { gap: 3px; }
+  .ciso-risk-track__score span { font-size: 8px; }
+  .ciso-risk-track__score strong { font-size: var(--font-size-xs); }
+  .ciso-risk-scale__caption { align-items: flex-start; flex-direction: column; gap: 3px; }
+  .ciso-risk-scale__caption span:last-child { text-align: left; }
+  .ciso-briefing-button { align-items: flex-start; }
+  .ciso-briefing-button svg { margin-top: 1px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ciso-dashboard *,
+  .ciso-dashboard *::before,
+  .ciso-dashboard *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

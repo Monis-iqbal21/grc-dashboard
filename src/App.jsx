@@ -2,6 +2,8 @@ import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import AppShell from './components/layout/AppShell.jsx';
 import Dashboard from './pages/Dashboard/Dashboard.jsx';
+import CisoDashboard from './pages/CisoDashboard/CisoDashboard.jsx';
+import Policies from './pages/Policies/Policies.jsx';
 import PlaceholderPage from './pages/PlaceholderPage.jsx';
 import { allNavigationItems } from './data/navigation.js';
 
@@ -13,7 +15,7 @@ function PageRoutes() {
   }, [location.pathname]);
   return <Routes><Route element={<AppShell />}>
     <Route path="/" element={<Navigate to="/dashboard" replace />} />
-    {allNavigationItems.map((item) => <Route key={item.path} path={item.path} element={item.path === '/dashboard' ? <Dashboard /> : <PlaceholderPage title={item.label} />} />)}
+    {allNavigationItems.map((item) => <Route key={item.path} path={item.path} element={item.path === '/dashboard' ? <Dashboard /> : item.path === '/ciso' ? <CisoDashboard /> : item.path === '/policies' ? <Policies /> : <PlaceholderPage title={item.label} />} />)}
     <Route path="*" element={<Navigate to="/dashboard" replace />} />
   </Route></Routes>;
 }
