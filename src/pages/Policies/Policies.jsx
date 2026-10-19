@@ -2,6 +2,8 @@ import { useMemo, useRef, useState } from 'react';
 import { ArrowDownToLine, FilePlus2 } from 'lucide-react';
 import { policiesData } from '../../data/policiesData.js';
 import AllPolicies from './AllPolicies.jsx';
+import Campaigns from './Campaigns.jsx';
+import MyPolicies from './MyPolicies.jsx';
 import './Policies.css';
 
 const tabs = [
@@ -44,6 +46,7 @@ export default function Policies() {
   const selectedPolicy = selectedOnPage || visiblePolicies[0] || null;
   const visibleSelectedPolicyId = selectedPolicy?.id ?? null;
   const showIntegrationNotice = (action) => setNotice(`${action} is available after integration.`);
+  const showCampaignPrototypeNotice = () => setNotice('Available after backend integration.');
   const selectTab = (tabId) => {
     setActiveTab(tabId);
     setNotice('');
@@ -115,12 +118,12 @@ export default function Policies() {
             pageCount={pageCount}
             pageSize={pageSize}
           />
-        ) : (
-          <div className="policies-coming-soon" role="status">
-            <span>{tabs.find((tab) => tab.id === activeTab)?.label}</span>
-            <p>This view will be designed next.</p>
-          </div>
-        )}
+        ) : activeTab === 'campaigns' ? (
+          <Campaigns onPrototypeAction={showCampaignPrototypeNotice} />
+        ) : null}
+        <div hidden={activeTab !== 'mine'}>
+          <MyPolicies onPrototypeAction={showCampaignPrototypeNotice} />
+        </div>
       </div>
     </section>
   );
