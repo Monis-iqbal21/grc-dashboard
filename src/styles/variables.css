@@ -289,6 +289,9 @@
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
+  --line-height-compact: 1.35;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.65;
 
   /* 8px spacing scale with small intermediate values for compact controls. */
   --space-1: 4px;

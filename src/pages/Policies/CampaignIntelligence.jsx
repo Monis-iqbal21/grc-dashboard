@@ -1,4 +1,5 @@
 import { ArrowUpRight, CalendarDays, CircleAlert, FileText, Users } from 'lucide-react';
+import { acknowledgementMethodOptions } from '../../data/campaignFormData.js';
 import { formatCampaignDate, getCompletionLabel } from './campaignUtils.js';
 
 const lifecycle = ['Draft', 'In Progress', 'Completed'];
@@ -79,6 +80,9 @@ export default function CampaignIntelligence({ campaign, onPrototypeAction }) {
     ? formatCampaignDate(campaign.completedAt)
     : formatCampaignDate(campaign.deadline);
   const canSendReminder = (campaign.status === 'In Progress' || campaign.status === 'Overdue') && campaign.pending > 0;
+  const acknowledgementMethod = acknowledgementMethodOptions.find(
+    (method) => method.value === campaign.settings?.acknowledgementMethod,
+  );
 
   return (
     <aside className="campaign-intelligence" aria-label={`Campaign Intelligence for ${campaign.title}`}>
@@ -103,22 +107,41 @@ export default function CampaignIntelligence({ campaign, onPrototypeAction }) {
         <Lifecycle campaign={campaign} />
       </section>
 
-      <ProgressRing campaign={campaign} />
-
-      <section className="campaign-intelligence-section" aria-labelledby="campaign-breakdown-heading">
-        <h3 id="campaign-breakdown-heading">Breakdown</h3>
-        <div className="campaign-breakdown">
-          <div><span>Acknowledged</span><strong>{campaign.acknowledged.toLocaleString()}</strong></div>
-          <div><span>Pending</span><strong>{campaign.pending.toLocaleString()}</strong></div>
-          <div><span>Total audience</span><strong>{campaign.recipients.toLocaleString()}</strong></div>
-          <div><span>{campaign.status === 'Completed' ? 'Completed' : 'Deadline'}</span><strong>{deadlineLabel}</strong></div>
-        </div>
-      </section>
+      {campaign.isLocalDraft ? (
+        <>
+          <div className="campaign-draft-state" role="status">
+            <strong>Draft · not launched</strong>
+            <span>No audience or acknowledgment totals have been generated.</span>
+          </div>
+          <section className="campaign-intelligence-section" aria-labelledby="campaign-breakdown-heading">
+            <h3 id="campaign-breakdown-heading">Draft configuration</h3>
+            <div className="campaign-breakdown">
+              <div><span>Launch status</span><strong>Not launched</strong></div>
+              <div><span>Deadline</span><strong>{deadlineLabel}</strong></div>
+              <div><span>Grace period</span><strong>{campaign.settings.gracePeriodDays} days</strong></div>
+              <div><span>How people acknowledge</span><strong>{acknowledgementMethod?.label || 'Not specified'}</strong></div>
+            </div>
+          </section>
+        </>
+      ) : (
+        <>
+          <ProgressRing campaign={campaign} />
+          <section className="campaign-intelligence-section" aria-labelledby="campaign-breakdown-heading">
+            <h3 id="campaign-breakdown-heading">Breakdown</h3>
+            <div className="campaign-breakdown">
+              <div><span>Acknowledged</span><strong>{campaign.acknowledged.toLocaleString()}</strong></div>
+              <div><span>Pending</span><strong>{campaign.pending.toLocaleString()}</strong></div>
+              <div><span>Total audience</span><strong>{campaign.recipients.toLocaleString()}</strong></div>
+              <div><span>{campaign.status === 'Completed' ? 'Completed' : 'Deadline'}</span><strong>{deadlineLabel}</strong></div>
+            </div>
+          </section>
+        </>
+      )}
 
       <section className="campaign-intelligence-section" aria-labelledby="campaign-metadata-heading">
         <h3 id="campaign-metadata-heading">Campaign metadata</h3>
         <dl className="campaign-metadata">
-          <div><dt><FileText aria-hidden="true" size={13} />Associated policy</dt><dd>{campaign.policy?.name || 'Policy not found'} <small>{campaign.policyId}</small></dd></div>
+          <div><dt><FileText aria-hidden="true" size={13} />Associated policy</dt><dd>{campaign.policy?.name || 'Policy not found'} <small>{campaign.policyReference || campaign.policyId}</small></dd></div>
           <div><dt><Users aria-hidden="true" size={13} />Target audience</dt><dd>{campaign.audience}</dd></div>
           <div><dt><CalendarDays aria-hidden="true" size={13} />{campaign.status === 'Completed' ? 'Completed on' : 'Deadline'}</dt><dd>{deadlineLabel}</dd></div>
         </dl>

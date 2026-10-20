@@ -1,7 +1,8 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import { ArrowDownToLine, BellRing, Plus, Search, SlidersHorizontal } from 'lucide-react';
 import { campaignsData } from '../../data/campaignsData.js';
 import { policiesData } from '../../data/policiesData.js';
+import NewCampaignModal from '../../components/policies/NewCampaignModal.jsx';
 import CampaignTracker from './CampaignTracker.jsx';
 import CampaignIntelligence from './CampaignIntelligence.jsx';
 import './Campaigns.css';
@@ -37,18 +38,49 @@ function CampaignSummary({ summary }) {
   );
 }
 
-export default function Campaigns({ onPrototypeAction }) {
+function createLocalCampaignId(campaigns) {
+  const existingIds = new Set(campaigns.map((campaign) => campaign.campaignId));
+  let serial = Date.now();
+  let campaignId = `CAM-LOCAL-${serial}`;
+  while (existingIds.has(campaignId)) {
+    serial += 1;
+    campaignId = `CAM-LOCAL-${serial}`;
+  }
+  return campaignId;
+}
+
+function formatAudience(form) {
+  if (form.everyoneInOrganisation) return 'Everyone in the organisation';
+  const selectedAudience = [
+    form.roles.trim() ? `Roles: ${form.roles.trim()}` : '',
+    form.departments.trim() ? `Departments: ${form.departments.trim()}` : '',
+  ].filter(Boolean);
+  return selectedAudience.join(' · ') || 'Specific roles or departments';
+}
+
+export default function Campaigns({ localCampaigns = [], onPrototypeAction, onCreateDraft, onDraftCreated, onOpenNewCampaign }) {
+  const newCampaignTriggerRef = useRef(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [statusFilter, setStatusFilter] = useState('all');
   const [sortBy, setSortBy] = useState('default');
   const [selectedCampaignId, setSelectedCampaignId] = useState(campaignsData[0]?.campaignId ?? null);
+  const [isNewCampaignOpen, setIsNewCampaignOpen] = useState(false);
 
   const campaignRecords = useMemo(() => campaignsData.map((campaign) => ({
     ...campaign,
     policy: policiesData.find((policy) => policy.policyId === campaign.policyId) || null,
     pending: getPending(campaign),
     completion: getCompletion(campaign),
-  })), []);
+  })).concat(localCampaigns.map((campaign) => ({
+    ...campaign,
+    policy: {
+      policyId: campaign.policyId,
+      reference: campaign.policyReference,
+      name: campaign.policyName,
+    },
+    pending: null,
+    completion: null,
+  }))), [localCampaigns]);
 
   const summary = useMemo(() => campaignRecords.reduce((totals, campaign) => {
     if (campaign.status === 'In Progress') totals.inProgress += 1;
@@ -87,7 +119,11 @@ export default function Campaigns({ onPrototypeAction }) {
       return matches.sort((a, b) => statusOrder[a.status] - statusOrder[b.status]);
     }
     if (sortBy === 'completion') {
-      return matches.sort((a, b) => b.completion - a.completion);
+      return matches.sort((a, b) => {
+        if (a.status === 'Draft' && b.status !== 'Draft') return 1;
+        if (b.status === 'Draft' && a.status !== 'Draft') return -1;
+        return (b.completion ?? 0) - (a.completion ?? 0);
+      });
     }
     return matches;
   }, [campaignRecords, searchQuery, sortBy, statusFilter]);
@@ -103,6 +139,45 @@ export default function Campaigns({ onPrototypeAction }) {
     setSelectedCampaignId(null);
   };
 
+  const createDraftCampaign = (form) => {
+    const campaign = {
+      campaignId: createLocalCampaignId([...campaignsData, ...localCampaigns]),
+      title: form.name,
+      status: 'Draft',
+      policyId: form.policy.value,
+      policyReference: form.policy.reference,
+      policyName: form.policy.title,
+      audience: formatAudience(form),
+      deadline: form.deadline,
+      completedAt: null,
+      isLocalDraft: true,
+      settings: {
+        name: form.name,
+        policyId: form.policyId,
+        policyReference: form.policy.reference,
+        policyTitle: form.policy.title,
+        deadline: form.deadline,
+        gracePeriodDays: form.gracePeriodDays,
+        acknowledgementMethod: form.acknowledgementMethod,
+        declaration: form.declaration,
+        everyoneInOrganisation: form.everyoneInOrganisation,
+        roles: form.roles,
+        departments: form.departments,
+        requireScrollToEnd: form.requireScrollToEnd,
+        requirePasswordReentry: form.requirePasswordReentry,
+        reminderDaysAfterLaunch: form.reminderDaysAfterLaunch,
+      },
+    };
+
+    onCreateDraft?.(campaign);
+    setSelectedCampaignId(campaign.campaignId);
+    setSearchQuery('');
+    setStatusFilter('all');
+    setSortBy('default');
+    setIsNewCampaignOpen(false);
+    onDraftCreated?.();
+  };
+
   return (
     <section className="campaigns-view" aria-label="Policy acknowledgment campaigns">
       <header className="campaigns-heading">
@@ -110,7 +185,12 @@ export default function Campaigns({ onPrototypeAction }) {
           <h1>Acknowledgment Campaigns</h1>
           <p>Track policy distribution, acknowledgment progress, and compliance deadlines.</p>
         </div>
-        <button className="policies-button policies-button--primary" type="button" onClick={onPrototypeAction}>
+        <button
+          className="policies-button policies-button--primary"
+          ref={newCampaignTriggerRef}
+          type="button"
+          onClick={() => { onOpenNewCampaign?.(); setIsNewCampaignOpen(true); }}
+        >
           <Plus aria-hidden="true" size={16} /> New Campaign
         </button>
       </header>
@@ -162,6 +242,13 @@ export default function Campaigns({ onPrototypeAction }) {
         />
         <CampaignIntelligence campaign={selectedCampaign} onPrototypeAction={onPrototypeAction} />
       </div>
+      {isNewCampaignOpen && (
+        <NewCampaignModal
+          onClose={() => setIsNewCampaignOpen(false)}
+          onCreate={createDraftCampaign}
+          triggerRef={newCampaignTriggerRef}
+        />
+      )}
     </section>
   );
 }

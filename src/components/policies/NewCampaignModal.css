@@ -1,0 +1,77 @@
+.campaign-modal {
+  width: min(100%, 760px);
+}
+
+.campaign-modal__body {
+  gap: var(--space-4);
+}
+
+.campaign-modal__helper {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-normal);
+}
+
+.campaign-modal__field-grid {
+  align-items: start;
+}
+
+.campaign-modal__option-group {
+  display: grid;
+  min-width: 0;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  background: var(--surface-2);
+}
+
+.campaign-modal__checkbox-field {
+  display: flex;
+  min-width: 0;
+  align-items: flex-start;
+  gap: var(--space-2);
+}
+
+.campaign-modal__checkbox-field > input {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  margin: var(--space-token-2) 0 0;
+  accent-color: var(--blue-primary);
+}
+
+.campaign-modal__checkbox-field > div {
+  display: grid;
+  min-width: 0;
+  gap: var(--space-1);
+}
+
+.campaign-modal__checkbox-field label {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+  cursor: pointer;
+}
+
+.campaign-modal__checkbox-field input:focus-visible {
+  outline: 2px solid var(--blue-soft);
+  outline-offset: 2px;
+}
+
+.campaign-modal .policy-modal__button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+@media (max-width: 479px) {
+  .campaign-modal__option-group {
+    padding: var(--space-3);
+  }
+
+  .campaign-modal__checkbox-field label {
+    font-size: var(--font-size-xs);
+  }
+}

@@ -1,6 +1,7 @@
 import { useId } from 'react';
 import { ChevronLeft, ChevronRight, FileText, MoreHorizontal, Search, SlidersHorizontal } from 'lucide-react';
 import PolicyPreview from './PolicyPreview.jsx';
+import { getPolicyStatusPresentation } from '../../data/policyStatusPresentation.js';
 
 const unavailable = '—';
 
@@ -52,7 +53,9 @@ export default function AllPolicies({
             <span className="visually-hidden">Filter by status</span>
             <select id={statusId} value={statusFilter} onChange={(event) => onStatusChange(event.target.value)}>
               <option value="all">All statuses</option>
-              {availableStatuses.map((status) => <option key={status} value={status}>{status}</option>)}
+              {availableStatuses.map((status) => (
+                <option key={status} value={status}>{getPolicyStatusPresentation(status).label}</option>
+              ))}
             </select>
           </label>
         </div>
@@ -90,7 +93,11 @@ export default function AllPolicies({
                       </td>
                       <td data-label="Owner">{policy.owner || unavailable}</td>
                       <td data-label="Version">{policy.version || unavailable}</td>
-                      <td data-label="Status"><span className={`policy-status policy-status--${policy.status.toLowerCase().replaceAll(' ', '-')}`}>{policy.status}</span></td>
+                      <td data-label="Status">
+                        <span className={`policy-status policy-status--${getPolicyStatusPresentation(policy.status).tone}`}>
+                          {getPolicyStatusPresentation(policy.status).label}
+                        </span>
+                      </td>
                       <td data-label="Updated">{policy.updatedAt || unavailable}</td>
                       <td className="policy-actions-cell" data-label="Actions">
                         <button

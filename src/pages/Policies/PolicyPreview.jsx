@@ -1,4 +1,5 @@
 import { ArrowUpRight, FileText } from 'lucide-react';
+import { getPolicyStatusPresentation, isDraftPolicyStatus } from '../../data/policyStatusPresentation.js';
 
 function PreviewField({ label, value }) {
   return (
@@ -28,7 +29,9 @@ export default function PolicyPreview({ policy, onNotice }) {
           <span>Policy ID · {policy.version}</span>
           <strong>{policy.policyId}</strong>
         </div>
-        <span className={`policy-status policy-status--${policy.status.toLowerCase().replaceAll(' ', '-')}`}>{policy.status}</span>
+        <span className={`policy-status policy-status--${getPolicyStatusPresentation(policy.status).tone}`}>
+          {getPolicyStatusPresentation(policy.status).label}
+        </span>
       </header>
 
       <div className="policy-preview-body">
@@ -41,7 +44,7 @@ export default function PolicyPreview({ policy, onNotice }) {
           <dl className="policy-preview-fields">
             <PreviewField label="Assigned owner" value={policy.owner} />
             <PreviewField label="Version" value={policy.version} />
-            <PreviewField label="Last approved" value={policy.lastApproved || (policy.status === 'Draft' ? 'Not applicable' : null)} />
+            <PreviewField label="Last approved" value={policy.lastApproved || (isDraftPolicyStatus(policy.status) ? 'Not applicable' : null)} />
             <PreviewField label="Review cadence" value={policy.reviewCadence} />
             <PreviewField label="Next review" value={policy.nextReview} />
           </dl>

@@ -22,7 +22,7 @@ export default function CampaignTracker({ campaigns, selectedCampaignId, onSelec
         <div className="campaign-list">
           {campaigns.map((campaign) => {
             const selected = campaign.campaignId === selectedCampaignId;
-            const completionLabel = getCompletionLabel(campaign.completion);
+            const completionLabel = campaign.isLocalDraft ? null : getCompletionLabel(campaign.completion);
             return (
               <button
                 className={`campaign-row${selected ? ' is-selected' : ''}`}
@@ -46,22 +46,28 @@ export default function CampaignTracker({ campaigns, selectedCampaignId, onSelec
                   <span><Users aria-hidden="true" size={13} />{campaign.audience}</span>
                 </span>
 
-                <span className="campaign-row-stats">
-                  <span><strong>{campaign.acknowledged}</strong> of {campaign.recipients} acknowledged</span>
-                  <span><strong>{campaign.pending}</strong> pending</span>
-                  <strong className="campaign-row-completion">{completionLabel}</strong>
-                </span>
-                <span
-                  className={`campaign-progress campaign-progress--${campaign.status.toLowerCase().replaceAll(' ', '-')}`}
-                  role="progressbar"
-                  aria-label={`${campaign.title} completion`}
-                  aria-valuemin={0}
-                  aria-valuemax={100}
-                  aria-valuenow={campaign.completion}
-                  aria-valuetext={completionLabel}
-                >
-                  <span style={{ width: `${campaign.completion}%` }} />
-                </span>
+                {campaign.isLocalDraft ? (
+                  <span className="campaign-row-not-launched">Not launched · no audience snapshot</span>
+                ) : (
+                  <>
+                    <span className="campaign-row-stats">
+                      <span><strong>{campaign.acknowledged}</strong> of {campaign.recipients} acknowledged</span>
+                      <span><strong>{campaign.pending}</strong> pending</span>
+                      <strong className="campaign-row-completion">{completionLabel}</strong>
+                    </span>
+                    <span
+                      className={`campaign-progress campaign-progress--${campaign.status.toLowerCase().replaceAll(' ', '-')}`}
+                      role="progressbar"
+                      aria-label={`${campaign.title} completion`}
+                      aria-valuemin={0}
+                      aria-valuemax={100}
+                      aria-valuenow={campaign.completion}
+                      aria-valuetext={completionLabel}
+                    >
+                      <span style={{ width: `${campaign.completion}%` }} />
+                    </span>
+                  </>
+                )}
               </button>
             );
           })}
