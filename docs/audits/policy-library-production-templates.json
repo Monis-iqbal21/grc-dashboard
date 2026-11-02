@@ -1,0 +1,2545 @@
+{
+  "inspectionDate": "2026-11-02",
+  "sourceUrl": "https://app.nvector.io/policies/library",
+  "expectedCatalogueCountAtSnapshot": 70,
+  "extractedCount": 70,
+  "uniqueCodeCount": 70,
+  "counts": {
+    "frameworks": {
+      "HIPAA": 31,
+      "NIST CSF 2.0": 36,
+      "Not shown": 3
+    },
+    "categories": {
+      "Uncategorized": 2,
+      "Protect": 14,
+      "Technical": 6,
+      "Physical": 6,
+      "Identify": 7,
+      "Administrative": 20,
+      "Govern": 13,
+      "Detect": 2
+    },
+    "missingDescriptions": 32,
+    "recordsWithoutLinkedControls": 3,
+    "totalLinkedControls": 221
+  },
+  "verifiedFilterOptions": {
+    "frameworks": [
+      "HIPAA",
+      "NIST CSF 2.0"
+    ],
+    "categories": [
+      "Administrative",
+      "Detect",
+      "Govern",
+      "Identify",
+      "Physical",
+      "Protect",
+      "Technical"
+    ],
+    "reviews": [
+      "Annually"
+    ]
+  },
+  "categoryCountsTotal": 68,
+  "categoriesInManagementList": [
+    "Access Management",
+    "Identify",
+    "Protect",
+    "Governance & Oversight",
+    "Risk & Compliance",
+    "Asset & Configuration",
+    "Data Protection & Cryptography",
+    "Human Resource Security",
+    "Operations & Resilience",
+    "Threat & Incident Management",
+    "Third-Party & Supplier",
+    "Govern",
+    "Detect",
+    "Administrative",
+    "Physical",
+    "Technical"
+  ],
+  "verification": {
+    "allTemplateCodesUnique": true,
+    "renderedCardsMatchedExpectedCount": true,
+    "noPaginationOrUnloadedCardGapsObserved": true,
+    "linkedControlCountsMatchedPreviewLists": true,
+    "frameworkReferencesMatchedLinkedControls": true,
+    "uncategorizedCodes": [
+      "HIPAA-035",
+      "HIPAA-028"
+    ],
+    "frameworkNotShownCodes": [
+      "HIPAA-004",
+      "HIPAA-018",
+      "HIPAA-026"
+    ],
+    "noLinkedControlsCodes": [
+      "HIPAA-004",
+      "HIPAA-018",
+      "HIPAA-026"
+    ]
+  },
+  "extractionLimitations": [
+    "No domain field was displayed in the template cards or previews.",
+    "The production preview used the same generic empty-state copy for Scope, Policy statements, Roles & responsibilities, Exceptions, Review cadence, and Related policies on all 70 records. These placeholders are not saved as authored template content in this dataset.",
+    "Purpose was present only when a production description was present; otherwise the preview explicitly stated that the template had no purpose.",
+    "Three records had no visible framework badge and no linked controls: HIPAA-004, HIPAA-018, and HIPAA-026.",
+    "Two records had no visible category: HIPAA-035 and HIPAA-028."
+  ],
+  "records": [
+    {
+      "id": "hipaa-035",
+      "code": "HIPAA-035",
+      "title": "Access Control Policy",
+      "status": "New",
+      "description": "Requires access permissions to be defined, managed, enforced, and reviewed with least privilege and separation of duties",
+      "framework": "HIPAA",
+      "category": null,
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 7,
+      "linkedControls": [
+        "AC-04",
+        "AC-05",
+        "AC-07",
+        "HR-02",
+        "HR-04",
+        "HR-09",
+        "NI-08"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires access permissions to be defined, managed, enforced, and reviewed with least privilege and separation of duties",
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "AC-04",
+              "AC-05",
+              "AC-07",
+              "HR-02",
+              "HR-04",
+              "HR-09",
+              "NI-08"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-001",
+      "code": "NIST-001",
+      "title": "Access Control Policy",
+      "status": "New",
+      "description": "Requires access permissions to be defined, managed, enforced, and reviewed with least privilege and separation of duties",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "PR.AA-05"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires access permissions to be defined, managed, enforced, and reviewed with least privilege and separation of duties",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "PR.AA-05"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-002",
+      "code": "HIPAA-002",
+      "title": "Application Security & Software Development Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Technical",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 12,
+      "linkedControls": [
+        "AS-01",
+        "AS-02",
+        "AS-03",
+        "AS-04",
+        "AS-05",
+        "AS-06",
+        "AS-07",
+        "AS-08",
+        "AS-09",
+        "LM-09",
+        "LM-10",
+        "NI-06"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "AS-01",
+              "AS-02",
+              "AS-03",
+              "AS-04",
+              "AS-05",
+              "AS-06",
+              "AS-07",
+              "AS-08",
+              "AS-09",
+              "LM-09",
+              "LM-10",
+              "NI-06"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-036",
+      "code": "HIPAA-036",
+      "title": "Asset Management Policy",
+      "status": "New",
+      "description": "Mandates maintaining a complete, accurate, and current hardware asset inventory",
+      "framework": "HIPAA",
+      "category": "Physical",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "DE-08"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Mandates maintaining a complete, accurate, and current hardware asset inventory",
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "DE-08"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-002",
+      "code": "NIST-002",
+      "title": "Asset Management Policy",
+      "status": "New",
+      "description": "Mandates maintaining a complete, accurate, and current hardware asset inventory",
+      "framework": "NIST CSF 2.0",
+      "category": "Identify",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 7,
+      "linkedControls": [
+        "ID.AM-01",
+        "ID.AM-02",
+        "ID.AM-03",
+        "ID.AM-04",
+        "ID.AM-05",
+        "ID.AM-08",
+        "PR.PS-03"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Mandates maintaining a complete, accurate, and current hardware asset inventory",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "ID.AM-01",
+              "ID.AM-02",
+              "ID.AM-03",
+              "ID.AM-04",
+              "ID.AM-05",
+              "ID.AM-08",
+              "PR.PS-03"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-004",
+      "code": "HIPAA-004",
+      "title": "Assign Security Responsibility Policy",
+      "status": "New",
+      "description": null,
+      "framework": null,
+      "category": "Administrative",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 0,
+      "linkedControls": [],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": []
+      }
+    },
+    {
+      "id": "hipaa-005",
+      "code": "HIPAA-005",
+      "title": "Audit Control Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Technical",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 4,
+      "linkedControls": [
+        "LM-01",
+        "LM-02",
+        "LM-04",
+        "LM-08"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "LM-01",
+              "LM-02",
+              "LM-04",
+              "LM-08"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-003",
+      "code": "NIST-003",
+      "title": "Backup and Recovery Policy",
+      "status": "New",
+      "description": "Requires backups of data to be created, protected, maintained, and periodically tested",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 2,
+      "linkedControls": [
+        "PR.DS-11",
+        "RC.RP-03"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires backups of data to be created, protected, maintained, and periodically tested",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "PR.DS-11",
+              "RC.RP-03"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-006",
+      "code": "HIPAA-006",
+      "title": "Breach Notification Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "IR-04"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "IR-04"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-007",
+      "code": "HIPAA-007",
+      "title": "Business Associate Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 4,
+      "linkedControls": [
+        "DC-02",
+        "VR-01",
+        "VR-02",
+        "VR-03"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "DC-02",
+              "VR-01",
+              "VR-02",
+              "VR-03"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-004",
+      "code": "NIST-004",
+      "title": "Business Context Policy",
+      "status": "New",
+      "description": "Requires documentation and communication of critical services and capabilities that stakeholders depend on",
+      "framework": "NIST CSF 2.0",
+      "category": "Govern",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 2,
+      "linkedControls": [
+        "GV.OC-04",
+        "GV.OC-05"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires documentation and communication of critical services and capabilities that stakeholders depend on",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "GV.OC-04",
+              "GV.OC-05"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-005",
+      "code": "NIST-005",
+      "title": "Business Continuity Management Policy",
+      "status": "New",
+      "description": "Requires mechanisms to be implemented to achieve defined resilience requirements across normal and adverse conditions",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 3,
+      "linkedControls": [
+        "PR.IR-03",
+        "PR.IR-04",
+        "RC.RP-04"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires mechanisms to be implemented to achieve defined resilience requirements across normal and adverse conditions",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "PR.IR-03",
+              "PR.IR-04",
+              "RC.RP-04"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-006",
+      "code": "NIST-006",
+      "title": "Change Management Policy",
+      "status": "New",
+      "description": "Requires changes and exceptions to be managed, assessed for risk impact, recorded, and tracked",
+      "framework": "NIST CSF 2.0",
+      "category": "Identify",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "ID.RA-07"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires changes and exceptions to be managed, assessed for risk impact, recorded, and tracked",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "ID.RA-07"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-008",
+      "code": "HIPAA-008",
+      "title": "Complaints Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "PR-06"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "PR-06"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-007",
+      "code": "NIST-007",
+      "title": "Configuration Management Policy",
+      "status": "New",
+      "description": "Requires configuration management practices to be established and applied to all managed systems",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "PR.PS-01"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires configuration management practices to be established and applied to all managed systems",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "PR.PS-01"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-008",
+      "code": "NIST-008",
+      "title": "Continuous Improvement Policy",
+      "status": "New",
+      "description": "Requires cybersecurity improvements to be identified and tracked from evaluation activities",
+      "framework": "NIST CSF 2.0",
+      "category": "Identify",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 3,
+      "linkedControls": [
+        "ID.IM-01",
+        "ID.IM-02",
+        "ID.IM-03"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires cybersecurity improvements to be identified and tracked from evaluation activities",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "ID.IM-01",
+              "ID.IM-02",
+              "ID.IM-03"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-009",
+      "code": "NIST-009",
+      "title": "Cybersecurity Awareness Policy",
+      "status": "New",
+      "description": "Requires all personnel to receive cybersecurity awareness training to perform tasks with security risks in mind",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "PR.AT-01"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires all personnel to receive cybersecurity awareness training to perform tasks with security risks in mind",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "PR.AT-01"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-010",
+      "code": "NIST-010",
+      "title": "Cybersecurity Governance Policy",
+      "status": "New",
+      "description": "Requires identification and consideration of stakeholder cybersecurity needs in risk management decisions",
+      "framework": "NIST CSF 2.0",
+      "category": "Govern",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 4,
+      "linkedControls": [
+        "GV.OC-02",
+        "GV.OV-01",
+        "GV.OV-02",
+        "GV.RR-01"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires identification and consideration of stakeholder cybersecurity needs in risk management decisions",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "GV.OC-02",
+              "GV.OV-01",
+              "GV.OV-02",
+              "GV.RR-01"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-011",
+      "code": "NIST-011",
+      "title": "Cybersecurity Investment Policy",
+      "status": "New",
+      "description": "Requires adequate resources to be allocated commensurate with cybersecurity risk strategy, roles, and responsibilities",
+      "framework": "NIST CSF 2.0",
+      "category": "Govern",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "GV.RR-03"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires adequate resources to be allocated commensurate with cybersecurity risk strategy, roles, and responsibilities",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "GV.RR-03"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-012",
+      "code": "NIST-012",
+      "title": "Cybersecurity Policy Framework",
+      "status": "New",
+      "description": "Establishes the organization's cybersecurity policy hierarchy based on context, strategy, and priorities",
+      "framework": "NIST CSF 2.0",
+      "category": "Govern",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 2,
+      "linkedControls": [
+        "GV.PO-01",
+        "GV.PO-02"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Establishes the organization's cybersecurity policy hierarchy based on context, strategy, and priorities",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "GV.PO-01",
+              "GV.PO-02"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-013",
+      "code": "NIST-013",
+      "title": "Cybersecurity Reporting Policy",
+      "status": "New",
+      "description": "Requires cybersecurity risk management performance to be evaluated and reviewed for improvement adjustments",
+      "framework": "NIST CSF 2.0",
+      "category": "Govern",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "GV.OV-03"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires cybersecurity risk management performance to be evaluated and reviewed for improvement adjustments",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "GV.OV-03"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-014",
+      "code": "NIST-014",
+      "title": "Cybersecurity Risk Management Policy",
+      "status": "New",
+      "description": "Establishes the organization's cybersecurity risk management objectives agreed upon by relevant stakeholders",
+      "framework": "NIST CSF 2.0",
+      "category": "Govern",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 10,
+      "linkedControls": [
+        "GV.RM-01",
+        "GV.RM-02",
+        "GV.RM-04",
+        "GV.RM-05",
+        "GV.RM-06",
+        "GV.RM-07",
+        "ID.RA-03",
+        "ID.RA-04",
+        "ID.RA-05",
+        "ID.RA-06"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Establishes the organization's cybersecurity risk management objectives agreed upon by relevant stakeholders",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "GV.RM-01",
+              "GV.RM-02",
+              "GV.RM-04",
+              "GV.RM-05",
+              "GV.RM-06",
+              "GV.RM-07",
+              "ID.RA-03",
+              "ID.RA-04",
+              "ID.RA-05",
+              "ID.RA-06"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-015",
+      "code": "NIST-015",
+      "title": "Cybersecurity Roles and Responsibilities Policy",
+      "status": "New",
+      "description": "Requires that cybersecurity roles, responsibilities, and authorities are established, communicated, understood, and enforced",
+      "framework": "NIST CSF 2.0",
+      "category": "Govern",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "GV.RR-02"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires that cybersecurity roles, responsibilities, and authorities are established, communicated, understood, and enforced",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "GV.RR-02"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-016",
+      "code": "NIST-016",
+      "title": "Cybersecurity Strategy Policy",
+      "status": "New",
+      "description": "Defines how the organizational mission informs cybersecurity risk management direction and priorities",
+      "framework": "NIST CSF 2.0",
+      "category": "Govern",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "GV.OC-01"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Defines how the organizational mission informs cybersecurity risk management direction and priorities",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "GV.OC-01"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-017",
+      "code": "NIST-017",
+      "title": "Cybersecurity Supply Chain Risk Management Policy",
+      "status": "New",
+      "description": "Establishes the organization's cybersecurity supply chain risk management program, strategy, and governance",
+      "framework": "NIST CSF 2.0",
+      "category": "Govern",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 9,
+      "linkedControls": [
+        "GV.SC-01",
+        "GV.SC-02",
+        "GV.SC-03",
+        "GV.SC-04",
+        "GV.SC-05",
+        "GV.SC-06",
+        "GV.SC-07",
+        "GV.SC-09",
+        "GV.SC-10"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Establishes the organization's cybersecurity supply chain risk management program, strategy, and governance",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "GV.SC-01",
+              "GV.SC-02",
+              "GV.SC-03",
+              "GV.SC-04",
+              "GV.SC-05",
+              "GV.SC-06",
+              "GV.SC-07",
+              "GV.SC-09",
+              "GV.SC-10"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-018",
+      "code": "NIST-018",
+      "title": "Cybersecurity Training Policy",
+      "status": "New",
+      "description": "Requires individuals in specialized roles to receive cybersecurity training relevant to their specific responsibilities",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "PR.AT-02"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires individuals in specialized roles to receive cybersecurity training relevant to their specific responsibilities",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "PR.AT-02"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-009",
+      "code": "HIPAA-009",
+      "title": "Data Backup & Storage Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Physical",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 7,
+      "linkedControls": [
+        "BR-02",
+        "BR-03",
+        "BR-04",
+        "BR-05",
+        "BR-07",
+        "BR-09",
+        "DS-03"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "BR-02",
+              "BR-03",
+              "BR-04",
+              "BR-05",
+              "BR-07",
+              "BR-09",
+              "DS-03"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-019",
+      "code": "NIST-019",
+      "title": "Data Governance Policy",
+      "status": "New",
+      "description": "Requires maintenance of data inventories and corresponding metadata for designated data types",
+      "framework": "NIST CSF 2.0",
+      "category": "Identify",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "ID.AM-07"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires maintenance of data inventories and corresponding metadata for designated data types",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "ID.AM-07"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-020",
+      "code": "NIST-020",
+      "title": "Data Security Policy",
+      "status": "New",
+      "description": "Requires data at rest to be protected for confidentiality, integrity, and availability",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 3,
+      "linkedControls": [
+        "PR.DS-01",
+        "PR.DS-02",
+        "PR.DS-10"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires data at rest to be protected for confidentiality, integrity, and availability",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "PR.DS-01",
+              "PR.DS-02",
+              "PR.DS-10"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-010",
+      "code": "HIPAA-010",
+      "title": "Disaster Recovery & Contingency Plan Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 5,
+      "linkedControls": [
+        "BR-01",
+        "BR-06",
+        "BR-11",
+        "IR-02",
+        "NI-05"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "BR-01",
+              "BR-06",
+              "BR-11",
+              "IR-02",
+              "NI-05"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-011",
+      "code": "HIPAA-011",
+      "title": "Emergency Access Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Technical",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "AC-11"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "AC-11"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-012",
+      "code": "HIPAA-012",
+      "title": "Emergency Mode Operations Plan Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 2,
+      "linkedControls": [
+        "BR-08",
+        "BR-10"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "BR-08",
+              "BR-10"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-013",
+      "code": "HIPAA-013",
+      "title": "Encryption & Key Management Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Technical",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 7,
+      "linkedControls": [
+        "DE-05",
+        "DS-01",
+        "DS-02",
+        "DS-04",
+        "DS-05",
+        "DS-06",
+        "DS-10"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "DE-05",
+              "DS-01",
+              "DS-02",
+              "DS-04",
+              "DS-05",
+              "DS-06",
+              "DS-10"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-021",
+      "code": "NIST-021",
+      "title": "Endpoint Security Policy",
+      "status": "New",
+      "description": "Requires controls to prevent installation and execution of unauthorized software",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "PR.PS-05"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires controls to prevent installation and execution of unauthorized software",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "PR.PS-05"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-022",
+      "code": "NIST-022",
+      "title": "Enterprise Risk Management Policy",
+      "status": "New",
+      "description": "Requires cybersecurity risk to be integrated into and inform enterprise-wide risk management processes",
+      "framework": "NIST CSF 2.0",
+      "category": "Govern",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "GV.RM-03"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires cybersecurity risk to be integrated into and inform enterprise-wide risk management processes",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "GV.RM-03"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-014",
+      "code": "HIPAA-014",
+      "title": "Evaluation Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 3,
+      "linkedControls": [
+        "GC-01",
+        "GC-02",
+        "GC-03"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "GC-01",
+              "GC-02",
+              "GC-03"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-015",
+      "code": "HIPAA-015",
+      "title": "HIPAA Compliance Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "HR-06"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "HR-06"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-016",
+      "code": "HIPAA-016",
+      "title": "HIPAA Documentation Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 2,
+      "linkedControls": [
+        "GC-06",
+        "HR-01"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "GC-06",
+              "HR-01"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-017",
+      "code": "HIPAA-017",
+      "title": "HIPAA Training Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 5,
+      "linkedControls": [
+        "TR-01",
+        "TR-02",
+        "TR-03",
+        "TR-04",
+        "TR-05"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "TR-01",
+              "TR-02",
+              "TR-03",
+              "TR-04",
+              "TR-05"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-018",
+      "code": "HIPAA-018",
+      "title": "HIPAA/State Laws Preemption Policy",
+      "status": "New",
+      "description": null,
+      "framework": null,
+      "category": "Administrative",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 0,
+      "linkedControls": [],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": []
+      }
+    },
+    {
+      "id": "hipaa-019",
+      "code": "HIPAA-019",
+      "title": "Human Resource Security Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 3,
+      "linkedControls": [
+        "HR-03",
+        "HR-05",
+        "HR-07"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "HR-03",
+              "HR-05",
+              "HR-07"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-023",
+      "code": "NIST-023",
+      "title": "Human Resources Security Policy",
+      "status": "New",
+      "description": "Requires cybersecurity responsibilities to be integrated into all relevant HR practices across the employee lifecycle",
+      "framework": "NIST CSF 2.0",
+      "category": "Govern",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "GV.RR-04"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires cybersecurity responsibilities to be integrated into all relevant HR practices across the employee lifecycle",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "GV.RR-04"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-024",
+      "code": "NIST-024",
+      "title": "Identity and Access Management Policy",
+      "status": "New",
+      "description": "Requires identities and credentials to be managed across their full lifecycle for all users, services, and hardware",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 4,
+      "linkedControls": [
+        "PR.AA-01",
+        "PR.AA-02",
+        "PR.AA-03",
+        "PR.AA-04"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires identities and credentials to be managed across their full lifecycle for all users, services, and hardware",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "PR.AA-01",
+              "PR.AA-02",
+              "PR.AA-03",
+              "PR.AA-04"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-025",
+      "code": "NIST-025",
+      "title": "Incident Response Policy",
+      "status": "New",
+      "description": "Requires relevant suppliers and third parties to be included in incident planning, response, and recovery",
+      "framework": "NIST CSF 2.0",
+      "category": "Govern",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 24,
+      "linkedControls": [
+        "DE.AE-04",
+        "DE.AE-06",
+        "DE.AE-08",
+        "GV.SC-08",
+        "ID.IM-04",
+        "RC.CO-03",
+        "RC.CO-04",
+        "RC.RP-01",
+        "RC.RP-02",
+        "RC.RP-05",
+        "RC.RP-06",
+        "RS.AN-03",
+        "RS.AN-06",
+        "RS.AN-07",
+        "RS.AN-08",
+        "RS.CO-02",
+        "RS.CO-03",
+        "RS.MA-01",
+        "RS.MA-02",
+        "RS.MA-03",
+        "RS.MA-04",
+        "RS.MA-05",
+        "RS.MI-01",
+        "RS.MI-02"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires relevant suppliers and third parties to be included in incident planning, response, and recovery",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "DE.AE-04",
+              "DE.AE-06",
+              "DE.AE-08",
+              "GV.SC-08",
+              "ID.IM-04",
+              "RC.CO-03",
+              "RC.CO-04",
+              "RC.RP-01",
+              "RC.RP-02",
+              "RC.RP-05",
+              "RC.RP-06",
+              "RS.AN-03",
+              "RS.AN-06",
+              "RS.AN-07",
+              "RS.AN-08",
+              "RS.CO-02",
+              "RS.CO-03",
+              "RS.MA-01",
+              "RS.MA-02",
+              "RS.MA-03",
+              "RS.MA-04",
+              "RS.MA-05",
+              "RS.MI-01",
+              "RS.MI-02"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-020",
+      "code": "HIPAA-020",
+      "title": "Information System Activity Review Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 2,
+      "linkedControls": [
+        "LM-05",
+        "LM-06"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "LM-05",
+              "LM-06"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-021",
+      "code": "HIPAA-021",
+      "title": "Media Disposal Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Physical",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "DE-09"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "DE-09"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-022",
+      "code": "HIPAA-022",
+      "title": "Media Reuse Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Physical",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "DE-11"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "DE-11"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-026",
+      "code": "NIST-026",
+      "title": "Network Security Policy",
+      "status": "New",
+      "description": "Requires networks and environments to be protected from unauthorized logical access and usage",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "PR.IR-01"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires networks and environments to be protected from unauthorized logical access and usage",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "PR.IR-01"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-023",
+      "code": "HIPAA-023",
+      "title": "PHI Uses and Disclosure Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 2,
+      "linkedControls": [
+        "PR-01",
+        "PR-02"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "PR-01",
+              "PR-02"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-027",
+      "code": "NIST-027",
+      "title": "Patch Management Policy",
+      "status": "New",
+      "description": "Requires software to be maintained, updated, and removed based on risk, including addressing end-of-life software",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "PR.PS-02"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires software to be maintained, updated, and removed based on risk, including addressing end-of-life software",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "PR.PS-02"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-024",
+      "code": "HIPAA-024",
+      "title": "Patient Right Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 3,
+      "linkedControls": [
+        "PR-03",
+        "PR-04",
+        "PR-05"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "PR-03",
+              "PR-04",
+              "PR-05"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-025",
+      "code": "HIPAA-025",
+      "title": "Person or Entity Authentication Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Technical",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 4,
+      "linkedControls": [
+        "AC-01",
+        "AC-02",
+        "AC-03",
+        "AC-08"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "AC-01",
+              "AC-02",
+              "AC-03",
+              "AC-08"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-028",
+      "code": "NIST-028",
+      "title": "Physical Security Policy",
+      "status": "New",
+      "description": "Requires physical access to assets to be managed, monitored, and controlled commensurate with risk",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 3,
+      "linkedControls": [
+        "DE.CM-02",
+        "PR.AA-06",
+        "PR.IR-02"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires physical access to assets to be managed, monitored, and controlled commensurate with risk",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "DE.CM-02",
+              "PR.AA-06",
+              "PR.IR-02"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-026",
+      "code": "HIPAA-026",
+      "title": "Policies and Procedures Policy",
+      "status": "New",
+      "description": null,
+      "framework": null,
+      "category": "Administrative",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 0,
+      "linkedControls": [],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": []
+      }
+    },
+    {
+      "id": "hipaa-027",
+      "code": "HIPAA-027",
+      "title": "Privacy Officer Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "GC-05"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "GC-05"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-028",
+      "code": "HIPAA-028",
+      "title": "Privacy Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": null,
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "DC-01"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "DC-01"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-029",
+      "code": "NIST-029",
+      "title": "Regulatory Compliance Policy",
+      "status": "New",
+      "description": "Requires identification, monitoring, and management of all applicable legal, regulatory, and contractual cybersecurity obligations",
+      "framework": "NIST CSF 2.0",
+      "category": "Govern",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "GV.OC-03"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires identification, monitoring, and management of all applicable legal, regulatory, and contractual cybersecurity obligations",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "GV.OC-03"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-029",
+      "code": "HIPAA-029",
+      "title": "Risk Management Process Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 9,
+      "linkedControls": [
+        "DE-04",
+        "DS-07",
+        "DS-08",
+        "DS-09",
+        "GC-04",
+        "NI-03",
+        "NI-04",
+        "NI-07",
+        "NI-09"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "DE-04",
+              "DS-07",
+              "DS-08",
+              "DS-09",
+              "GC-04",
+              "NI-03",
+              "NI-04",
+              "NI-07",
+              "NI-09"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-030",
+      "code": "HIPAA-030",
+      "title": "Sanctions Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "HR-10"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "HR-10"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-030",
+      "code": "NIST-030",
+      "title": "Secure Software Development Policy",
+      "status": "New",
+      "description": "Requires secure software development practices to be integrated across the SDLC",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "PR.PS-06"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires secure software development practices to be integrated across the SDLC",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "PR.PS-06"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-031",
+      "code": "HIPAA-031",
+      "title": "Security Incident Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 5,
+      "linkedControls": [
+        "IR-01",
+        "IR-03",
+        "IR-05",
+        "LM-03",
+        "LM-07"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "IR-01",
+              "IR-03",
+              "IR-05",
+              "LM-03",
+              "LM-07"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-031",
+      "code": "NIST-031",
+      "title": "Security Logging Policy",
+      "status": "New",
+      "description": "Requires log records to be created, protected, and retained to enable monitoring, analysis, and investigation",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "PR.PS-04"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires log records to be created, protected, and retained to enable monitoring, analysis, and investigation",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "PR.PS-04"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-032",
+      "code": "NIST-032",
+      "title": "Security Monitoring Policy",
+      "status": "New",
+      "description": "Requires continuous monitoring of networks and network services for potential adverse events",
+      "framework": "NIST CSF 2.0",
+      "category": "Detect",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 5,
+      "linkedControls": [
+        "DE.AE-02",
+        "DE.AE-03",
+        "DE.CM-01",
+        "DE.CM-03",
+        "DE.CM-09"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires continuous monitoring of networks and network services for potential adverse events",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "DE.AE-02",
+              "DE.AE-03",
+              "DE.CM-01",
+              "DE.CM-03",
+              "DE.CM-09"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-033",
+      "code": "NIST-033",
+      "title": "Supply Chain Risk Management Policy",
+      "status": "New",
+      "description": "Requires assessment of hardware and software authenticity and integrity before acquisition and use",
+      "framework": "NIST CSF 2.0",
+      "category": "Identify",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 2,
+      "linkedControls": [
+        "ID.RA-09",
+        "ID.RA-10"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires assessment of hardware and software authenticity and integrity before acquisition and use",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "ID.RA-09",
+              "ID.RA-10"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-034",
+      "code": "NIST-034",
+      "title": "Third-Party Cybersecurity Policy",
+      "status": "New",
+      "description": "Requires monitoring of external service provider activities to detect potential adverse events",
+      "framework": "NIST CSF 2.0",
+      "category": "Detect",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "DE.CM-06"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires monitoring of external service provider activities to detect potential adverse events",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "DE.CM-06"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-035",
+      "code": "NIST-035",
+      "title": "Threat Intelligence Policy",
+      "status": "New",
+      "description": "Requires cyber threat intelligence to be received from relevant information sharing forums and trusted sources",
+      "framework": "NIST CSF 2.0",
+      "category": "Identify",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 2,
+      "linkedControls": [
+        "DE.AE-07",
+        "ID.RA-02"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires cyber threat intelligence to be received from relevant information sharing forums and trusted sources",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "DE.AE-07",
+              "ID.RA-02"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-032",
+      "code": "HIPAA-032",
+      "title": "Unique User Identification Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Technical",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControls": [
+        "AC-06"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "AC-06"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nist-036",
+      "code": "NIST-036",
+      "title": "Vulnerability Management Policy",
+      "status": "New",
+      "description": "Requires vulnerabilities in assets to be systematically identified, validated, and recorded",
+      "framework": "NIST CSF 2.0",
+      "category": "Identify",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 2,
+      "linkedControls": [
+        "ID.RA-01",
+        "ID.RA-08"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-28",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": "Requires vulnerabilities in assets to be systematically identified, validated, and recorded",
+        "frameworkReferences": [
+          {
+            "framework": "NIST CSF 2.0",
+            "controls": [
+              "ID.RA-01",
+              "ID.RA-08"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-033",
+      "code": "HIPAA-033",
+      "title": "Workstation Acceptable Use Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Physical",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 8,
+      "linkedControls": [
+        "HR-08",
+        "NI-02",
+        "OW-01",
+        "WH-01",
+        "WH-02",
+        "WH-03",
+        "WH-04",
+        "WH-05"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "HR-08",
+              "NI-02",
+              "OW-01",
+              "WH-01",
+              "WH-02",
+              "WH-03",
+              "WH-04",
+              "WH-05"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hipaa-034",
+      "code": "HIPAA-034",
+      "title": "Workstation Security Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Physical",
+      "domain": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 10,
+      "linkedControls": [
+        "AC-09",
+        "AC-10",
+        "DE-01",
+        "DE-02",
+        "DE-03",
+        "DE-06",
+        "DE-07",
+        "DE-10",
+        "NI-01",
+        "NI-10"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "updatedAt": "2026-10-23",
+      "owner": "—",
+      "lastReviewed": "Not recorded",
+      "previewContent": {
+        "purpose": null,
+        "frameworkReferences": [
+          {
+            "framework": "HIPAA",
+            "controls": [
+              "AC-09",
+              "AC-10",
+              "DE-01",
+              "DE-02",
+              "DE-03",
+              "DE-06",
+              "DE-07",
+              "DE-10",
+              "NI-01",
+              "NI-10"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
