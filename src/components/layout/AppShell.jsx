@@ -19,7 +19,7 @@ export default function AppShell() {
   const [overlayOpen, setOverlayOpen] = useState(false);
   const location = useLocation();
   const current = allNavigationItems.find(
-    (item) => item.path === location.pathname,
+    (item) => item.path === location.pathname || location.pathname.startsWith(`${item.path}/`),
   );
   const closeOverlay = useCallback(() => setOverlayOpen(false), []);
   const toggleSidebar = () =>
@@ -72,7 +72,7 @@ export default function AppShell() {
       />
       <div className="main-area">
         <Topbar
-          title={current?.label || "Dashboard"}
+          title={current?.label || (location.pathname.startsWith("/procedures") ? "Procedures" : "Dashboard")}
           mode={mode}
           overlayOpen={overlayOpen}
           onMenu={toggleSidebar}
