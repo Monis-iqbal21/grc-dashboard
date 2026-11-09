@@ -1,0 +1,2542 @@
+{
+  "audit": {
+    "observedAt": "2026-11-07",
+    "productionUrl": "https://app.nvector.io/policies/library",
+    "localRoute": "/policy-library",
+    "mode": "Authenticated UI inspection; read-only; no production records were submitted or modified.",
+    "completeness": "All 70 rendered template cards and all 16 category rows were observed. Preview and form sections were inspected on representative records. Variable per-record preview prose was not exhaustively transcribed."
+  },
+  "module": {
+    "title": "Policy library",
+    "description": "Maintained policy templates across HIPAA and NIST CSF 2.0 — search, filter, and start a draft in your register.",
+    "tabs": [
+      {
+        "id": "templates",
+        "label": "Templates",
+        "count": 70,
+        "default": true
+      },
+      {
+        "id": "categories",
+        "label": "Categories",
+        "count": 16,
+        "query": "tab=categories"
+      }
+    ],
+    "templateAction": "+ New template",
+    "categoryAction": "+ New category",
+    "scroll": "Document-level vertical scrolling; no pagination or separate list scroll was observed."
+  },
+  "templates": [
+    {
+      "code": "HIPAA-035",
+      "title": "Access Control Policy",
+      "status": "New",
+      "description": "Requires access permissions to be defined, managed, enforced, and reviewed with least privilege and separation of duties",
+      "framework": "HIPAA",
+      "category": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 7,
+      "linkedControlReferences": [
+        "AC-04",
+        "AC-05",
+        "AC-07",
+        "HR-02",
+        "HR-04",
+        "HR-09",
+        "NI-08"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "hipaaReference": "164.312(a)(1); 164.308(a)(4)(ii)(B); 164.308(a)(4)(ii)(C); 164.308(a)(3)(ii)(C)"
+    },
+    {
+      "code": "NIST-001",
+      "title": "Access Control Policy",
+      "status": "In use",
+      "description": "Requires access permissions to be defined, managed, enforced, and reviewed with least privilege and separation of duties",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "PR.AA-05"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-002",
+      "title": "Application Security & Software Development Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Technical",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 12,
+      "linkedControlReferences": [
+        "AS-01",
+        "AS-02",
+        "AS-03",
+        "AS-04",
+        "AS-05",
+        "AS-06",
+        "AS-07",
+        "AS-08",
+        "AS-09",
+        "LM-09",
+        "LM-10",
+        "NI-06"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026",
+      "hipaaReference": "164.312(c)(1); 164.308(a)(1)(ii)(B); 164.312(a)(1); 164.312(d); 164.308(a)(1)(ii)(A)"
+    },
+    {
+      "code": "HIPAA-036",
+      "title": "Asset Management Policy",
+      "status": "In use",
+      "description": "Mandates maintaining a complete, accurate, and current hardware asset inventory",
+      "framework": "HIPAA",
+      "category": "Physical",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "DE-08"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-002",
+      "title": "Asset Management Policy",
+      "status": "New",
+      "description": "Mandates maintaining a complete, accurate, and current hardware asset inventory",
+      "framework": "NIST CSF 2.0",
+      "category": "Identify",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 7,
+      "linkedControlReferences": [
+        "ID.AM-01",
+        "ID.AM-02",
+        "ID.AM-03",
+        "ID.AM-04",
+        "ID.AM-05",
+        "ID.AM-08",
+        "PR.PS-03"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-004",
+      "title": "Assign Security Responsibility Policy",
+      "status": "New",
+      "description": null,
+      "framework": null,
+      "category": "Administrative",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 0,
+      "linkedControlReferences": [],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-005",
+      "title": "Audit Control Policy",
+      "status": "In use",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Technical",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 4,
+      "linkedControlReferences": [
+        "LM-01",
+        "LM-02",
+        "LM-04",
+        "LM-08"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-003",
+      "title": "Backup and Recovery Policy",
+      "status": "New",
+      "description": "Requires backups of data to be created, protected, maintained, and periodically tested",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 2,
+      "linkedControlReferences": [
+        "PR.DS-11",
+        "RC.RP-03"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-006",
+      "title": "Breach Notification Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "IR-04"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-007",
+      "title": "Business Associate Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 4,
+      "linkedControlReferences": [
+        "DC-02",
+        "VR-01",
+        "VR-02",
+        "VR-03"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-004",
+      "title": "Business Context Policy",
+      "status": "New",
+      "description": "Requires documentation and communication of critical services and capabilities that stakeholders depend on",
+      "framework": "NIST CSF 2.0",
+      "category": "Govern",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 2,
+      "linkedControlReferences": [
+        "GV.OC-04",
+        "GV.OC-05"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-005",
+      "title": "Business Continuity Management Policy",
+      "status": "New",
+      "description": "Requires mechanisms to be implemented to achieve defined resilience requirements across normal and adverse conditions",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 3,
+      "linkedControlReferences": [
+        "PR.IR-03",
+        "PR.IR-04",
+        "RC.RP-04"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-006",
+      "title": "Change Management Policy",
+      "status": "New",
+      "description": "Requires changes and exceptions to be managed, assessed for risk impact, recorded, and tracked",
+      "framework": "NIST CSF 2.0",
+      "category": "Identify",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "ID.RA-07"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-008",
+      "title": "Complaints Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "PR-06"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-007",
+      "title": "Configuration Management Policy",
+      "status": "New",
+      "description": "Requires configuration management practices to be established and applied to all managed systems",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "PR.PS-01"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-008",
+      "title": "Continuous Improvement Policy",
+      "status": "New",
+      "description": "Requires cybersecurity improvements to be identified and tracked from evaluation activities",
+      "framework": "NIST CSF 2.0",
+      "category": "Identify",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 3,
+      "linkedControlReferences": [
+        "ID.IM-01",
+        "ID.IM-02",
+        "ID.IM-03"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-009",
+      "title": "Cybersecurity Awareness Policy",
+      "status": "New",
+      "description": "Requires all personnel to receive cybersecurity awareness training to perform tasks with security risks in mind",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "PR.AT-01"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-010",
+      "title": "Cybersecurity Governance Policy",
+      "status": "New",
+      "description": "Requires identification and consideration of stakeholder cybersecurity needs in risk management decisions",
+      "framework": "NIST CSF 2.0",
+      "category": "Govern",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 4,
+      "linkedControlReferences": [
+        "GV.OC-02",
+        "GV.OV-01",
+        "GV.OV-02",
+        "GV.RR-01"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-011",
+      "title": "Cybersecurity Investment Policy",
+      "status": "New",
+      "description": "Requires adequate resources to be allocated commensurate with cybersecurity risk strategy, roles, and responsibilities",
+      "framework": "NIST CSF 2.0",
+      "category": "Govern",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "GV.RR-03"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-012",
+      "title": "Cybersecurity Policy Framework",
+      "status": "New",
+      "description": "Establishes the organization's cybersecurity policy hierarchy based on context, strategy, and priorities",
+      "framework": "NIST CSF 2.0",
+      "category": "Govern",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 2,
+      "linkedControlReferences": [
+        "GV.PO-01",
+        "GV.PO-02"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-013",
+      "title": "Cybersecurity Reporting Policy",
+      "status": "New",
+      "description": "Requires cybersecurity risk management performance to be evaluated and reviewed for improvement adjustments",
+      "framework": "NIST CSF 2.0",
+      "category": "Govern",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "GV.OV-03"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-014",
+      "title": "Cybersecurity Risk Management Policy",
+      "status": "New",
+      "description": "Establishes the organization's cybersecurity risk management objectives agreed upon by relevant stakeholders",
+      "framework": "NIST CSF 2.0",
+      "category": "Govern",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 10,
+      "linkedControlReferences": [
+        "GV.RM-01",
+        "GV.RM-02",
+        "GV.RM-04",
+        "GV.RM-05",
+        "GV.RM-06",
+        "GV.RM-07",
+        "ID.RA-03",
+        "ID.RA-04",
+        "ID.RA-05",
+        "ID.RA-06"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-015",
+      "title": "Cybersecurity Roles and Responsibilities Policy",
+      "status": "New",
+      "description": "Requires that cybersecurity roles, responsibilities, and authorities are established, communicated, understood, and enforced",
+      "framework": "NIST CSF 2.0",
+      "category": "Govern",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "GV.RR-02"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-016",
+      "title": "Cybersecurity Strategy Policy",
+      "status": "New",
+      "description": "Defines how the organizational mission informs cybersecurity risk management direction and priorities",
+      "framework": "NIST CSF 2.0",
+      "category": "Govern",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "GV.OC-01"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-017",
+      "title": "Cybersecurity Supply Chain Risk Management Policy",
+      "status": "New",
+      "description": "Establishes the organization's cybersecurity supply chain risk management program, strategy, and governance",
+      "framework": "NIST CSF 2.0",
+      "category": "Govern",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 9,
+      "linkedControlReferences": [
+        "GV.SC-01",
+        "GV.SC-02",
+        "GV.SC-03",
+        "GV.SC-04",
+        "GV.SC-05",
+        "GV.SC-06",
+        "GV.SC-07",
+        "GV.SC-09",
+        "GV.SC-10"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-018",
+      "title": "Cybersecurity Training Policy",
+      "status": "New",
+      "description": "Requires individuals in specialized roles to receive cybersecurity training relevant to their specific responsibilities",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "PR.AT-02"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-009",
+      "title": "Data Backup & Storage Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Physical",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 7,
+      "linkedControlReferences": [
+        "BR-02",
+        "BR-03",
+        "BR-04",
+        "BR-05",
+        "BR-07",
+        "BR-09",
+        "DS-03"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-019",
+      "title": "Data Governance Policy",
+      "status": "New",
+      "description": "Requires maintenance of data inventories and corresponding metadata for designated data types",
+      "framework": "NIST CSF 2.0",
+      "category": "Identify",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "ID.AM-07"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-020",
+      "title": "Data Security Policy",
+      "status": "New",
+      "description": "Requires data at rest to be protected for confidentiality, integrity, and availability",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 3,
+      "linkedControlReferences": [
+        "PR.DS-01",
+        "PR.DS-02",
+        "PR.DS-10"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-010",
+      "title": "Disaster Recovery & Contingency Plan Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 5,
+      "linkedControlReferences": [
+        "BR-01",
+        "BR-06",
+        "BR-11",
+        "IR-02",
+        "NI-05"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-011",
+      "title": "Emergency Access Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Technical",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "AC-11"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-012",
+      "title": "Emergency Mode Operations Plan Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 2,
+      "linkedControlReferences": [
+        "BR-08",
+        "BR-10"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-013",
+      "title": "Encryption & Key Management Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Technical",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 7,
+      "linkedControlReferences": [
+        "DE-05",
+        "DS-01",
+        "DS-02",
+        "DS-04",
+        "DS-05",
+        "DS-06",
+        "DS-10"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-021",
+      "title": "Endpoint Security Policy",
+      "status": "New",
+      "description": "Requires controls to prevent installation and execution of unauthorized software",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "PR.PS-05"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-022",
+      "title": "Enterprise Risk Management Policy",
+      "status": "New",
+      "description": "Requires cybersecurity risk to be integrated into and inform enterprise-wide risk management processes",
+      "framework": "NIST CSF 2.0",
+      "category": "Govern",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "GV.RM-03"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-014",
+      "title": "Evaluation Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 3,
+      "linkedControlReferences": [
+        "GC-01",
+        "GC-02",
+        "GC-03"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-015",
+      "title": "HIPAA Compliance Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "HR-06"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-016",
+      "title": "HIPAA Documentation Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 2,
+      "linkedControlReferences": [
+        "GC-06",
+        "HR-01"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-017",
+      "title": "HIPAA Training Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 5,
+      "linkedControlReferences": [
+        "TR-01",
+        "TR-02",
+        "TR-03",
+        "TR-04",
+        "TR-05"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-018",
+      "title": "HIPAA/State Laws Preemption Policy",
+      "status": "New",
+      "description": null,
+      "framework": null,
+      "category": "Administrative",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 0,
+      "linkedControlReferences": [],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-019",
+      "title": "Human Resource Security Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 3,
+      "linkedControlReferences": [
+        "HR-03",
+        "HR-05",
+        "HR-07"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-023",
+      "title": "Human Resources Security Policy",
+      "status": "New",
+      "description": "Requires cybersecurity responsibilities to be integrated into all relevant HR practices across the employee lifecycle",
+      "framework": "NIST CSF 2.0",
+      "category": "Govern",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "GV.RR-04"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-024",
+      "title": "Identity and Access Management Policy",
+      "status": "New",
+      "description": "Requires identities and credentials to be managed across their full lifecycle for all users, services, and hardware",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 4,
+      "linkedControlReferences": [
+        "PR.AA-01",
+        "PR.AA-02",
+        "PR.AA-03",
+        "PR.AA-04"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-025",
+      "title": "Incident Response Policy",
+      "status": "New",
+      "description": "Requires relevant suppliers and third parties to be included in incident planning, response, and recovery",
+      "framework": "NIST CSF 2.0",
+      "category": "Govern",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 24,
+      "linkedControlReferences": [
+        "DE.AE-04",
+        "DE.AE-06",
+        "DE.AE-08",
+        "GV.SC-08",
+        "ID.IM-04",
+        "RC.CO-03",
+        "RC.CO-04",
+        "RC.RP-01",
+        "RC.RP-02",
+        "RC.RP-05",
+        "RC.RP-06",
+        "RS.AN-03",
+        "RS.AN-06",
+        "RS.AN-07",
+        "RS.AN-08",
+        "RS.CO-02",
+        "RS.CO-03",
+        "RS.MA-01",
+        "RS.MA-02",
+        "RS.MA-03",
+        "RS.MA-04",
+        "RS.MA-05",
+        "RS.MI-01",
+        "RS.MI-02"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-020",
+      "title": "Information System Activity Review Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 2,
+      "linkedControlReferences": [
+        "LM-05",
+        "LM-06"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-021",
+      "title": "Media Disposal Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Physical",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "DE-09"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-022",
+      "title": "Media Reuse Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Physical",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "DE-11"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-026",
+      "title": "Network Security Policy",
+      "status": "New",
+      "description": "Requires networks and environments to be protected from unauthorized logical access and usage",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "PR.IR-01"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-023",
+      "title": "PHI Uses and Disclosure Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 2,
+      "linkedControlReferences": [
+        "PR-01",
+        "PR-02"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-027",
+      "title": "Patch Management Policy",
+      "status": "New",
+      "description": "Requires software to be maintained, updated, and removed based on risk, including addressing end-of-life software",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "PR.PS-02"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-024",
+      "title": "Patient Right Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 3,
+      "linkedControlReferences": [
+        "PR-03",
+        "PR-04",
+        "PR-05"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-025",
+      "title": "Person or Entity Authentication Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Technical",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 4,
+      "linkedControlReferences": [
+        "AC-01",
+        "AC-02",
+        "AC-03",
+        "AC-08"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-028",
+      "title": "Physical Security Policy",
+      "status": "New",
+      "description": "Requires physical access to assets to be managed, monitored, and controlled commensurate with risk",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 3,
+      "linkedControlReferences": [
+        "DE.CM-02",
+        "PR.AA-06",
+        "PR.IR-02"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-026",
+      "title": "Policies and Procedures Policy",
+      "status": "New",
+      "description": null,
+      "framework": null,
+      "category": "Administrative",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 0,
+      "linkedControlReferences": [],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-027",
+      "title": "Privacy Officer Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "GC-05"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-028",
+      "title": "Privacy Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": null,
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "DC-01"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-029",
+      "title": "Regulatory Compliance Policy",
+      "status": "New",
+      "description": "Requires identification, monitoring, and management of all applicable legal, regulatory, and contractual cybersecurity obligations",
+      "framework": "NIST CSF 2.0",
+      "category": "Govern",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "GV.OC-03"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-029",
+      "title": "Risk Management Process Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 9,
+      "linkedControlReferences": [
+        "DE-04",
+        "DS-07",
+        "DS-08",
+        "DS-09",
+        "GC-04",
+        "NI-03",
+        "NI-04",
+        "NI-07",
+        "NI-09"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-030",
+      "title": "Sanctions Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "HR-10"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-030",
+      "title": "Secure Software Development Policy",
+      "status": "New",
+      "description": "Requires secure software development practices to be integrated across the SDLC",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "PR.PS-06"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-031",
+      "title": "Security Incident Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Administrative",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 5,
+      "linkedControlReferences": [
+        "IR-01",
+        "IR-03",
+        "IR-05",
+        "LM-03",
+        "LM-07"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-031",
+      "title": "Security Logging Policy",
+      "status": "New",
+      "description": "Requires log records to be created, protected, and retained to enable monitoring, analysis, and investigation",
+      "framework": "NIST CSF 2.0",
+      "category": "Protect",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "PR.PS-04"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-032",
+      "title": "Security Monitoring Policy",
+      "status": "New",
+      "description": "Requires continuous monitoring of networks and network services for potential adverse events",
+      "framework": "NIST CSF 2.0",
+      "category": "Detect",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 5,
+      "linkedControlReferences": [
+        "DE.AE-02",
+        "DE.AE-03",
+        "DE.CM-01",
+        "DE.CM-03",
+        "DE.CM-09"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-033",
+      "title": "Supply Chain Risk Management Policy",
+      "status": "New",
+      "description": "Requires assessment of hardware and software authenticity and integrity before acquisition and use",
+      "framework": "NIST CSF 2.0",
+      "category": "Identify",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 2,
+      "linkedControlReferences": [
+        "ID.RA-09",
+        "ID.RA-10"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-034",
+      "title": "Third-Party Cybersecurity Policy",
+      "status": "New",
+      "description": "Requires monitoring of external service provider activities to detect potential adverse events",
+      "framework": "NIST CSF 2.0",
+      "category": "Detect",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "DE.CM-06"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-035",
+      "title": "Threat Intelligence Policy",
+      "status": "New",
+      "description": "Requires cyber threat intelligence to be received from relevant information sharing forums and trusted sources",
+      "framework": "NIST CSF 2.0",
+      "category": "Identify",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 2,
+      "linkedControlReferences": [
+        "DE.AE-07",
+        "ID.RA-02"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-032",
+      "title": "Unique User Identification Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Technical",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 1,
+      "linkedControlReferences": [
+        "AC-06"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "NIST-036",
+      "title": "Vulnerability Management Policy",
+      "status": "New",
+      "description": "Requires vulnerabilities in assets to be systematically identified, validated, and recorded",
+      "framework": "NIST CSF 2.0",
+      "category": "Identify",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 2,
+      "linkedControlReferences": [
+        "ID.RA-01",
+        "ID.RA-08"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-033",
+      "title": "Workstation Acceptable Use Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Physical",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 8,
+      "linkedControlReferences": [
+        "HR-08",
+        "NI-02",
+        "OW-01",
+        "WH-01",
+        "WH-02",
+        "WH-03",
+        "WH-04",
+        "WH-05"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    },
+    {
+      "code": "HIPAA-034",
+      "title": "Workstation Security Policy",
+      "status": "New",
+      "description": null,
+      "framework": "HIPAA",
+      "category": "Physical",
+      "reviewFrequency": "Annually",
+      "linkedControlCount": 10,
+      "linkedControlReferences": [
+        "AC-09",
+        "AC-10",
+        "DE-01",
+        "DE-02",
+        "DE-03",
+        "DE-06",
+        "DE-07",
+        "DE-10",
+        "NI-01",
+        "NI-10"
+      ],
+      "version": "v1.0",
+      "updatedLabel": "Oct 2026"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Access Management",
+      "templateCount": 0,
+      "policyCount": 0,
+      "description": null
+    },
+    {
+      "name": "Identify",
+      "templateCount": 7,
+      "policyCount": 0,
+      "description": null
+    },
+    {
+      "name": "Protect",
+      "templateCount": 14,
+      "policyCount": 1,
+      "description": null
+    },
+    {
+      "name": "Governance & Oversight",
+      "templateCount": 0,
+      "policyCount": 0,
+      "description": null
+    },
+    {
+      "name": "Risk & Compliance",
+      "templateCount": 0,
+      "policyCount": 0,
+      "description": null
+    },
+    {
+      "name": "Asset & Configuration",
+      "templateCount": 0,
+      "policyCount": 0,
+      "description": null
+    },
+    {
+      "name": "Data Protection & Cryptography",
+      "templateCount": 0,
+      "policyCount": 0,
+      "description": null
+    },
+    {
+      "name": "Human Resource Security",
+      "templateCount": 0,
+      "policyCount": 0,
+      "description": null
+    },
+    {
+      "name": "Operations & Resilience",
+      "templateCount": 0,
+      "policyCount": 0,
+      "description": null
+    },
+    {
+      "name": "Threat & Incident Management",
+      "templateCount": 0,
+      "policyCount": 0,
+      "description": null
+    },
+    {
+      "name": "Third-Party & Supplier",
+      "templateCount": 0,
+      "policyCount": 0,
+      "description": null
+    },
+    {
+      "name": "Govern",
+      "templateCount": 13,
+      "policyCount": 0,
+      "description": null
+    },
+    {
+      "name": "Detect",
+      "templateCount": 2,
+      "policyCount": 0,
+      "description": null
+    },
+    {
+      "name": "Administrative",
+      "templateCount": 20,
+      "policyCount": 0,
+      "description": null
+    },
+    {
+      "name": "Physical",
+      "templateCount": 6,
+      "policyCount": 2,
+      "description": null
+    },
+    {
+      "name": "Technical",
+      "templateCount": 6,
+      "policyCount": 1,
+      "description": null
+    }
+  ],
+  "filters": {
+    "search": {
+      "label": "Search",
+      "placeholder": "Search by name or code...",
+      "searches": [
+        "title/name",
+        "code/reference"
+      ],
+      "queryParameter": "search"
+    },
+    "framework": {
+      "label": "Framework",
+      "default": "All frameworks",
+      "options": [
+        "All frameworks",
+        "HIPAA",
+        "NIST CSF 2.0"
+      ]
+    },
+    "category": {
+      "label": "Category",
+      "default": "All categories",
+      "options": [
+        "All categories",
+        "Administrative",
+        "Detect",
+        "Govern",
+        "Identify",
+        "Physical",
+        "Protect",
+        "Technical"
+      ]
+    },
+    "review": {
+      "label": "Review",
+      "default": "Any review",
+      "options": [
+        "Any review",
+        "Annually"
+      ]
+    },
+    "combination": "Search and single-select filters combine.",
+    "resultText": "Showing {visible} of 70 templates",
+    "noResults": [
+      "Showing 0 of 70 templates",
+      "No template matches these filters."
+    ],
+    "activeFilterNote": "Filtered. Clear the filters to see all 70 templates.",
+    "sortOptions": []
+  },
+  "dropdownOptions": {
+    "templateCategory": [
+      "Access Management",
+      "Governance & Oversight",
+      "Risk & Compliance",
+      "Asset & Configuration",
+      "Data Protection & Cryptography",
+      "Human Resource Security",
+      "Operations & Resilience",
+      "Threat & Incident Management",
+      "Third-Party & Supplier",
+      "Govern",
+      "Identify",
+      "Protect",
+      "Detect",
+      "Administrative",
+      "Physical",
+      "Technical"
+    ],
+    "csfFunction": [
+      "Govern",
+      "Identify",
+      "Protect",
+      "Detect",
+      "Respond",
+      "Recover"
+    ],
+    "reviewFrequency": [
+      "Annually",
+      "Bi-annually",
+      "Quarterly",
+      "Every 2 years"
+    ],
+    "suggestedClassification": [
+      "Internal",
+      "Confidential",
+      "Restricted"
+    ],
+    "framework": [
+      "HIPAA",
+      "NIST CSF 2.0"
+    ]
+  },
+  "forms": {
+    "newTemplate": {
+      "title": "New policy template",
+      "steps": [
+        "Details",
+        "Framework mapping",
+        "Content"
+      ],
+      "footerRequiredText": "Fields marked * are required.",
+      "fields": [
+        {
+          "step": "Details",
+          "label": "Template code",
+          "inputType": "disabled text",
+          "required": false,
+          "default": "",
+          "placeholder": "Chosen from the category",
+          "helper": "Auto-generated from category when saved."
+        },
+        {
+          "step": "Details",
+          "label": "Name",
+          "inputType": "text",
+          "required": true,
+          "default": "",
+          "placeholder": "Access Control Policy"
+        },
+        {
+          "step": "Details",
+          "label": "Category",
+          "inputType": "select",
+          "required": true,
+          "default": "— Choose —",
+          "optionsKey": "templateCategory"
+        },
+        {
+          "step": "Details",
+          "label": "Domain · CSF function",
+          "inputType": "select",
+          "required": true,
+          "default": "— Choose —",
+          "optionsKey": "csfFunction"
+        },
+        {
+          "step": "Details",
+          "label": "Review frequency",
+          "inputType": "select",
+          "required": true,
+          "default": "Annually",
+          "optionsKey": "reviewFrequency"
+        },
+        {
+          "step": "Details",
+          "label": "Version",
+          "inputType": "text",
+          "required": false,
+          "default": "v1.0",
+          "helper": "The template's own. An adopted policy numbers itself."
+        },
+        {
+          "step": "Details",
+          "label": "Owner / author",
+          "inputType": "text",
+          "required": false,
+          "default": "",
+          "placeholder": "e.g. Governance, Risk & Compliance"
+        },
+        {
+          "step": "Details",
+          "label": "Description",
+          "inputType": "textarea",
+          "required": false,
+          "default": "",
+          "placeholder": "Shown to authors when they browse templates."
+        },
+        {
+          "step": "Details · More details (optional)",
+          "label": "Suggested classification",
+          "inputType": "select",
+          "required": false,
+          "default": "—",
+          "optionsKey": "suggestedClassification",
+          "helper": "Advice an adopter may overrule."
+        },
+        {
+          "step": "Details · More details (optional)",
+          "label": "Accountable role",
+          "inputType": "text",
+          "required": false,
+          "default": "",
+          "placeholder": "Privacy Officer",
+          "helper": "A role, not a person."
+        },
+        {
+          "step": "Details · More details (optional)",
+          "label": "Supporting procedure",
+          "inputType": "text",
+          "required": false,
+          "default": "",
+          "placeholder": "Access Permission Management (visible portion; full value not confirmed)",
+          "helper": "What carries the policy out."
+        },
+        {
+          "step": "Details · More details (optional)",
+          "label": "Effective from date",
+          "inputType": "date",
+          "required": false,
+          "default": "",
+          "helper": "When this version takes effect."
+        },
+        {
+          "step": "Details · More details (optional)",
+          "label": "Last reviewed date",
+          "inputType": "date",
+          "required": false,
+          "default": "",
+          "helper": "When somebody last read it through."
+        },
+        {
+          "step": "Framework mapping",
+          "label": "Frameworks this policy evidences",
+          "inputType": "checkbox group",
+          "required": false,
+          "default": [],
+          "optionsKey": "framework",
+          "helper": "Toggle a framework, then add the specific clauses this policy satisfies. One policy can map to several frameworks."
+        },
+        {
+          "step": "Framework mapping",
+          "label": "Add a {framework} clause",
+          "inputType": "searchable combo box",
+          "required": false,
+          "default": "No clauses added yet.",
+          "placeholder": "Type a clause ref or words from its title",
+          "supports": [
+            "search by reference",
+            "search by title",
+            "coverage Full/Partial",
+            "remove selected clause",
+            "Open button"
+          ]
+        },
+        {
+          "step": "Content",
+          "label": "Content mode",
+          "inputType": "toggle",
+          "required": false,
+          "default": "Markdown",
+          "options": [
+            "Markdown",
+            "Rich text"
+          ]
+        },
+        {
+          "step": "Content",
+          "label": "Content",
+          "inputType": "Markdown textarea or Rich text editor",
+          "required": false,
+          "default": "",
+          "placeholder": "# Policy title; Write in Markdown. The preview beside this is what readers will see."
+        },
+        {
+          "step": "Content",
+          "label": "Publish it — authors can start from this straight away",
+          "inputType": "checkbox",
+          "required": false,
+          "default": false,
+          "helper": "Leave it off while the template is still being written."
+        }
+      ],
+      "richTextToolbar": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "B",
+        "I",
+        "U",
+        "• List",
+        "1. List",
+        "Left",
+        "Centre",
+        "Right",
+        "Table",
+        "Link",
+        "Rule"
+      ],
+      "counterWhenEmpty": "0 words ~ 1 min read",
+      "autosaveNotice": "Autosaves every 60s",
+      "actions": [
+        "Close",
+        "Back",
+        "Next →",
+        "Save now",
+        "Create template"
+      ],
+      "validation": [
+        {
+          "label": "Name",
+          "required": true,
+          "emptyMessage": "Give the template a name."
+        },
+        {
+          "label": "Category",
+          "required": true,
+          "emptyMessage": "Choose a category."
+        },
+        {
+          "label": "Domain · CSF function",
+          "required": true,
+          "emptyMessage": "Choose the CSF function the policy serves."
+        }
+      ],
+      "unverified": [
+        "Create/save/publish side effects",
+        "autosave persistence",
+        "any server-side validation beyond observed empty required fields"
+      ]
+    },
+    "newCategory": {
+      "title": "New category",
+      "fields": [
+        {
+          "label": "Name",
+          "inputType": "text",
+          "requiredStatus": "not visibly marked",
+          "default": "",
+          "placeholder": "Information Security"
+        },
+        {
+          "label": "Description",
+          "inputType": "textarea",
+          "requiredStatus": "not visibly marked",
+          "default": "",
+          "placeholder": null,
+          "helper": null
+        }
+      ],
+      "actions": [
+        "Cancel",
+        "Create category",
+        "Close"
+      ],
+      "validation": "Unverified; no submission was made."
+    }
+  },
+  "previewSections": [
+    {
+      "heading": "Purpose",
+      "behavior": "Uses the record description when present; otherwise “This template states no purpose.”"
+    },
+    {
+      "heading": "Scope",
+      "fallback": "This template does not say which systems, people or third parties it applies to."
+    },
+    {
+      "heading": "Policy statements",
+      "fallback": "This template has no policy statements yet."
+    },
+    {
+      "heading": "Roles & responsibilities",
+      "fallback": "No responsibilities are described beyond the accountable role."
+    },
+    {
+      "heading": "Controls linked (N)",
+      "behavior": "Lists mapped control references.",
+      "fallback": "No controls linked yet — a policy adopted from this starts with no control links, so it counts towards no framework until you add them."
+    },
+    {
+      "heading": "Framework references",
+      "caption": "The clauses each framework answers through this policy",
+      "fallback": "This template answers no clause of a framework your organisation tracks."
+    },
+    {
+      "heading": "Exceptions",
+      "fallback": "No exceptions are stated in this template. Add them when you adopt it if your organisation grants any."
+    },
+    {
+      "heading": "Review cadence",
+      "fallback": "Reviewed every 12 months, or on significant change."
+    },
+    {
+      "heading": "Related policies",
+      "fallback": "No related policies or documents are named."
+    }
+  ],
+  "interactions": {
+    "tabs": "Switch between Templates and Categories; categories uses ?tab=categories.",
+    "search": "Title and code searches verified; combined with filters.",
+    "filters": "Single-choice controls; filters combine and are reflected in query parameters.",
+    "preview": "Opens a modal; Close and Escape dismiss it.",
+    "categoryRows": "No selection or row actions observed.",
+    "templates": "No bulk selection, pagination, or sort UI observed.",
+    "frameworkMapping": "Checkboxes are independent; multiple frameworks can be enabled. Search clause by reference/title. Selected clause can toggle Full/Partial and be removed.",
+    "modal": "New Template and New Category open modals; neither form was submitted."
+  },
+  "counts": {
+    "templates": 70,
+    "templateStatuses": {
+      "In use": 3,
+      "New": 67
+    },
+    "templateFrameworks": {
+      "HIPAA": 31,
+      "NIST CSF 2.0": 36,
+      "No visible badge": 3
+    },
+    "templateCategories": {
+      "Administrative": 20,
+      "Detect": 2,
+      "Govern": 13,
+      "Identify": 7,
+      "Physical": 6,
+      "Protect": 14,
+      "Technical": 6,
+      "No category shown": 2
+    },
+    "categories": 16,
+    "policiesAcrossCategories": 4
+  },
+  "emptyStates": {
+    "search": [
+      "Showing 0 of 70 templates",
+      "No template matches these filters."
+    ],
+    "noMappedControls": "0 — none linked",
+    "noSelectedClauses": "No clauses added yet."
+  },
+  "limitations": [
+    "Use template, Create template, Create category, Save now, Publish, and autosave effects were not triggered.",
+    "New Category requiredness and validation are unverified.",
+    "Full current clause option totals and complete option list were not re-counted in this fresh pass; the existing 2026-11-02 catalog is included separately as supplementary evidence.",
+    "Variable preview prose was sampled, not exhaustively transcribed for every template.",
+    "Production responsive breakpoints and loading/API error views were not tested."
+  ],
+  "supplementaryControlCatalog": {
+    "evidenceDate": "2026-11-02",
+    "source": "Existing docs/audits/policy-library-controls.json; not independently exhaustively re-verified in this 2026-11-07 pass.",
+    "frameworks": [
+      {
+        "framework": "HIPAA",
+        "optionCount": 74,
+        "groups": [
+          {
+            "prefix": "AC",
+            "controls": [
+              {
+                "id": "AC-01",
+                "title": "Multi-factor authentication for the cloud console (e.g., AWS)"
+              },
+              {
+                "id": "AC-02",
+                "title": "VPN access management with MFA"
+              },
+              {
+                "id": "AC-03",
+                "title": "Platform access management with MFA"
+              },
+              {
+                "id": "AC-04",
+                "title": "Role definition in cloud and platform (RBAC, least privilege)"
+              },
+              {
+                "id": "AC-05",
+                "title": "Cloud IAM groups to enforce access restrictions"
+              },
+              {
+                "id": "AC-06",
+                "title": "Managed identity service or SSO for user authentication (e.g., AWS Cognito, Okta)"
+              },
+              {
+                "id": "AC-07",
+                "title": "Just-in-time access for privileged operations"
+              },
+              {
+                "id": "AC-08",
+                "title": "Strong password enforcement"
+              },
+              {
+                "id": "AC-09",
+                "title": "Session timeout and auto-logout, cloud console"
+              },
+              {
+                "id": "AC-10",
+                "title": "Session timeout and auto-logout, platform"
+              },
+              {
+                "id": "AC-11",
+                "title": "Break-glass emergency access accounts with alerting"
+              }
+            ]
+          },
+          {
+            "prefix": "AS",
+            "controls": [
+              {
+                "id": "AS-01",
+                "title": "Restrict HTTP methods"
+              },
+              {
+                "id": "AS-02",
+                "title": "Code scanning (e.g., Snyk, Dependabot, AWS CodeGuru)"
+              },
+              {
+                "id": "AS-03",
+                "title": "API gateway security (e.g., AWS API Gateway)"
+              },
+              {
+                "id": "AS-04",
+                "title": "Automated vulnerability scanning"
+              },
+              {
+                "id": "AS-05",
+                "title": "Secure SDLC"
+              },
+              {
+                "id": "AS-06",
+                "title": "API authentication (OAuth 2.0, OpenID Connect)"
+              },
+              {
+                "id": "AS-07",
+                "title": "Static and dynamic application security testing"
+              },
+              {
+                "id": "AS-08",
+                "title": "Strict Content Security Policy rules"
+              },
+              {
+                "id": "AS-09",
+                "title": "Runtime application self-protection"
+              }
+            ]
+          },
+          {
+            "prefix": "BR",
+            "controls": [
+              {
+                "id": "BR-01",
+                "title": "Multi-region disaster recovery failover"
+              },
+              {
+                "id": "BR-02",
+                "title": "Automated backups"
+              },
+              {
+                "id": "BR-03",
+                "title": "Backup validation"
+              },
+              {
+                "id": "BR-04",
+                "title": "Automated snapshots of compute instances"
+              },
+              {
+                "id": "BR-05",
+                "title": "Offsite backup"
+              },
+              {
+                "id": "BR-06",
+                "title": "DR test schedule and result monitoring"
+              },
+              {
+                "id": "BR-07",
+                "title": "Alerts for backup failures"
+              },
+              {
+                "id": "BR-08",
+                "title": "Load balancing"
+              },
+              {
+                "id": "BR-09",
+                "title": "Backup retention and deletion"
+              },
+              {
+                "id": "BR-10",
+                "title": "Emergency mode operations runbook"
+              },
+              {
+                "id": "BR-11",
+                "title": "Applications and data criticality analysis with RTO and RPO targets"
+              }
+            ]
+          },
+          {
+            "prefix": "DC",
+            "controls": [
+              {
+                "id": "DC-01",
+                "title": "Hosting region selection based on customer data residency"
+              },
+              {
+                "id": "DC-02",
+                "title": "Review of cloud provider data center security (e.g., SOC 2, ISO 27001 reports)"
+              }
+            ]
+          },
+          {
+            "prefix": "DE",
+            "controls": [
+              {
+                "id": "DE-01",
+                "title": "Monitoring of company devices"
+              },
+              {
+                "id": "DE-02",
+                "title": "Device provisioning for staff accessing sensitive information"
+              },
+              {
+                "id": "DE-03",
+                "title": "Automatic deactivation of lost or stolen devices"
+              },
+              {
+                "id": "DE-04",
+                "title": "Enforcement of security patches and software updates"
+              },
+              {
+                "id": "DE-05",
+                "title": "Full disk encryption on company devices"
+              },
+              {
+                "id": "DE-06",
+                "title": "Mobile device management"
+              },
+              {
+                "id": "DE-07",
+                "title": "Antivirus and anti-malware enforcement"
+              },
+              {
+                "id": "DE-08",
+                "title": "Asset management and inventory"
+              },
+              {
+                "id": "DE-09",
+                "title": "Secure disposal of retired devices"
+              },
+              {
+                "id": "DE-10",
+                "title": "Remote data wipe"
+              },
+              {
+                "id": "DE-11",
+                "title": "Sanitisation of devices and media before reissue"
+              }
+            ]
+          },
+          {
+            "prefix": "DS",
+            "controls": [
+              {
+                "id": "DS-01",
+                "title": "Encryption of PHI in transit (TLS 1.2/1.3)"
+              },
+              {
+                "id": "DS-02",
+                "title": "AES-256 encryption of PHI at rest"
+              },
+              {
+                "id": "DS-03",
+                "title": "Encrypted backups with cross-region redundancy (e.g., AWS Backup)"
+              },
+              {
+                "id": "DS-04",
+                "title": "Secure email via encryption (TLS, PGP)"
+              },
+              {
+                "id": "DS-05",
+                "title": "Tokenization of PHI"
+              },
+              {
+                "id": "DS-06",
+                "title": "Encryption key management"
+              },
+              {
+                "id": "DS-07",
+                "title": "Inventory of all data repositories"
+              },
+              {
+                "id": "DS-08",
+                "title": "Automated patch management tool"
+              },
+              {
+                "id": "DS-09",
+                "title": "Information classification"
+              },
+              {
+                "id": "DS-10",
+                "title": "Digital signatures for sensitive files"
+              }
+            ]
+          },
+          {
+            "prefix": "HR",
+            "controls": [
+              {
+                "id": "HR-01",
+                "title": "Employee handbook"
+              },
+              {
+                "id": "HR-02",
+                "title": "Access control termination"
+              },
+              {
+                "id": "HR-03",
+                "title": "Employee onboarding"
+              },
+              {
+                "id": "HR-04",
+                "title": "Employee offboarding"
+              },
+              {
+                "id": "HR-05",
+                "title": "Job description management"
+              },
+              {
+                "id": "HR-06",
+                "title": "NDA and confidentiality agreements"
+              },
+              {
+                "id": "HR-07",
+                "title": "Background check verification"
+              },
+              {
+                "id": "HR-08",
+                "title": "Workstation security and acceptable use"
+              },
+              {
+                "id": "HR-09",
+                "title": "Annual access review"
+              },
+              {
+                "id": "HR-10",
+                "title": "Documented sanctions for workforce violations"
+              }
+            ]
+          },
+          {
+            "prefix": "NI",
+            "controls": [
+              {
+                "id": "NI-01",
+                "title": "Client-side security agents (e.g., CrowdStrike, SentinelOne)"
+              },
+              {
+                "id": "NI-02",
+                "title": "Firewall on employee home networks"
+              },
+              {
+                "id": "NI-03",
+                "title": "Network segmentation in the cloud environment"
+              },
+              {
+                "id": "NI-04",
+                "title": "Certificate management (e.g., AWS Certificate Manager)"
+              },
+              {
+                "id": "NI-05",
+                "title": "DDoS protection"
+              },
+              {
+                "id": "NI-06",
+                "title": "Infrastructure as code"
+              },
+              {
+                "id": "NI-07",
+                "title": "Web application firewall"
+              },
+              {
+                "id": "NI-08",
+                "title": "IP allow-listing"
+              },
+              {
+                "id": "NI-09",
+                "title": "Secure DNS"
+              },
+              {
+                "id": "NI-10",
+                "title": "Endpoint detection and response"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "framework": "NIST CSF 2.0",
+        "optionCount": 100,
+        "groups": [
+          {
+            "prefix": "DE",
+            "controls": [
+              {
+                "id": "DE.AE-02",
+                "title": "Potentially Adverse Events Analyzed"
+              },
+              {
+                "id": "DE.AE-03",
+                "title": "Information Correlated"
+              },
+              {
+                "id": "DE.AE-04",
+                "title": "Estimated Impact Established"
+              },
+              {
+                "id": "DE.AE-06",
+                "title": "Information Provided to Authorized Staff"
+              },
+              {
+                "id": "DE.AE-07",
+                "title": "Cyber Threat Intelligence Integrated"
+              },
+              {
+                "id": "DE.AE-08",
+                "title": "Incidents Declared"
+              },
+              {
+                "id": "DE.CM-01",
+                "title": "Networks Monitored"
+              },
+              {
+                "id": "DE.CM-02",
+                "title": "Physical Environment Monitored"
+              },
+              {
+                "id": "DE.CM-03",
+                "title": "Personnel Activity Monitored"
+              },
+              {
+                "id": "DE.CM-06",
+                "title": "External Service Provider Activities Monitored"
+              },
+              {
+                "id": "DE.CM-09",
+                "title": "Computing Hardware and Software Monitored"
+              }
+            ]
+          },
+          {
+            "prefix": "GV",
+            "controls": [
+              {
+                "id": "GV.OC-01",
+                "title": "Organizational Mission Understood"
+              },
+              {
+                "id": "GV.OC-02",
+                "title": "Internal and External Stakeholders Identified"
+              },
+              {
+                "id": "GV.OC-03",
+                "title": "Legal and Regulatory Requirements Understood"
+              },
+              {
+                "id": "GV.OC-04",
+                "title": "Critical Objectives and Dependencies Understood"
+              },
+              {
+                "id": "GV.OC-05",
+                "title": "Outcomes and Resilience Requirements Understood"
+              },
+              {
+                "id": "GV.OV-01",
+                "title": "Cybersecurity Risk Management Reviewed"
+              },
+              {
+                "id": "GV.OV-02",
+                "title": "Cybersecurity Strategy Reviewed"
+              },
+              {
+                "id": "GV.OV-03",
+                "title": "Organizational Cybersecurity Performance Reviewed"
+              },
+              {
+                "id": "GV.PO-01",
+                "title": "Cybersecurity Policy Established"
+              },
+              {
+                "id": "GV.PO-02",
+                "title": "Policy Reviewed and Updated"
+              },
+              {
+                "id": "GV.RM-01",
+                "title": "Risk Management Objectives Established"
+              },
+              {
+                "id": "GV.RM-02",
+                "title": "Risk Appetite and Tolerance Established"
+              },
+              {
+                "id": "GV.RM-03",
+                "title": "Cybersecurity Risk Management Integrated"
+              },
+              {
+                "id": "GV.RM-04",
+                "title": "Strategic Direction Communicated"
+              },
+              {
+                "id": "GV.RM-05",
+                "title": "Lines of Communication Established"
+              },
+              {
+                "id": "GV.RM-06",
+                "title": "Standardized Response Methods Established"
+              },
+              {
+                "id": "GV.RM-07",
+                "title": "Strategic Opportunities Considered"
+              },
+              {
+                "id": "GV.RR-01",
+                "title": "Leadership Accountable for Cybersecurity Risk"
+              },
+              {
+                "id": "GV.RR-02",
+                "title": "Roles and Responsibilities Assigned"
+              },
+              {
+                "id": "GV.RR-03",
+                "title": "Adequate Resources Provided"
+              },
+              {
+                "id": "GV.RR-04",
+                "title": "Cybersecurity Integrated in Human Resources"
+              },
+              {
+                "id": "GV.SC-01",
+                "title": "Supply Chain Risk Management Policy Established"
+              },
+              {
+                "id": "GV.SC-02",
+                "title": "Cybersecurity Roles in Supply Chain Established"
+              },
+              {
+                "id": "GV.SC-03",
+                "title": "Supply Chain Risk Management Integrated"
+              },
+              {
+                "id": "GV.SC-04",
+                "title": "Suppliers Inventoried"
+              },
+              {
+                "id": "GV.SC-05",
+                "title": "Requirements Established for Suppliers"
+              },
+              {
+                "id": "GV.SC-06",
+                "title": "Planning and Due Diligence Performed"
+              },
+              {
+                "id": "GV.SC-07",
+                "title": "Supplier Security Practices Assessed"
+              },
+              {
+                "id": "GV.SC-08",
+                "title": "Relevant Suppliers Treated as Critical Infrastructure"
+              },
+              {
+                "id": "GV.SC-09",
+                "title": "Supply Chain Security Practices Assessed Before Acquisition"
+              },
+              {
+                "id": "GV.SC-10",
+                "title": "Cybersecurity Supply Chain Risk Managed Throughout Product Lifecycle"
+              }
+            ]
+          },
+          {
+            "prefix": "ID",
+            "controls": [
+              {
+                "id": "ID.AM-01",
+                "title": "Inventories of Hardware Maintained"
+              },
+              {
+                "id": "ID.AM-02",
+                "title": "Inventories of Software Maintained"
+              },
+              {
+                "id": "ID.AM-03",
+                "title": "Network Representations Maintained"
+              },
+              {
+                "id": "ID.AM-04",
+                "title": "Inventories of Services Maintained"
+              },
+              {
+                "id": "ID.AM-05",
+                "title": "Assets Prioritized"
+              },
+              {
+                "id": "ID.AM-07",
+                "title": "Inventories of Data Maintained"
+              },
+              {
+                "id": "ID.AM-08",
+                "title": "Assets Managed Throughout Lifecycle"
+              },
+              {
+                "id": "ID.IM-01",
+                "title": "Improvements Identified from Evaluations"
+              },
+              {
+                "id": "ID.IM-02",
+                "title": "Improvements Identified from Security Tests and Exercises"
+              },
+              {
+                "id": "ID.IM-03",
+                "title": "Improvements Identified from Execution of Operational Processes"
+              },
+              {
+                "id": "ID.IM-04",
+                "title": "Incident Response Plans Updated"
+              },
+              {
+                "id": "ID.RA-01",
+                "title": "Vulnerabilities in Assets Identified"
+              },
+              {
+                "id": "ID.RA-02",
+                "title": "Cyber Threat Intelligence Received"
+              },
+              {
+                "id": "ID.RA-03",
+                "title": "Internal and External Threats Identified"
+              },
+              {
+                "id": "ID.RA-04",
+                "title": "Potential Impacts and Likelihoods Identified"
+              },
+              {
+                "id": "ID.RA-05",
+                "title": "Threats, Vulnerabilities, and Impacts Used to Understand Risk"
+              },
+              {
+                "id": "ID.RA-06",
+                "title": "Risk Responses Chosen and Prioritized"
+              },
+              {
+                "id": "ID.RA-07",
+                "title": "Changes Identified and Assessed"
+              },
+              {
+                "id": "ID.RA-08",
+                "title": "Processes Established for Receiving Vulnerability Reports"
+              },
+              {
+                "id": "ID.RA-09",
+                "title": "Authenticity of Hardware and Software Verified"
+              },
+              {
+                "id": "ID.RA-10",
+                "title": "Critical Suppliers Assessed"
+              }
+            ]
+          },
+          {
+            "prefix": "PR",
+            "controls": [
+              {
+                "id": "PR.AT-01",
+                "title": "Awareness Training Provided"
+              },
+              {
+                "id": "PR.AT-02",
+                "title": "Role-Based Training Provided"
+              },
+              {
+                "id": "PR.DS-01",
+                "title": "Data-at-Rest Protected"
+              },
+              {
+                "id": "PR.DS-02",
+                "title": "Data-in-Transit Protected"
+              },
+              {
+                "id": "PR.DS-10",
+                "title": "Data-in-Use Protected"
+              },
+              {
+                "id": "PR.DS-11",
+                "title": "Backups of Data Maintained"
+              },
+              {
+                "id": "PR.IR-01",
+                "title": "Networks and Environments Protected"
+              },
+              {
+                "id": "PR.IR-02",
+                "title": "Internet-Facing Attack Surface Managed"
+              },
+              {
+                "id": "PR.IR-03",
+                "title": "Mechanisms Implemented to Achieve Resilience Requirements"
+              },
+              {
+                "id": "PR.IR-04",
+                "title": "Adequate Resource Capacity Ensured"
+              },
+              {
+                "id": "PR.PS-01",
+                "title": "Configuration Management Performed"
+              },
+              {
+                "id": "PR.PS-02",
+                "title": "Software Maintained"
+              },
+              {
+                "id": "PR.PS-03",
+                "title": "Hardware Maintained"
+              },
+              {
+                "id": "PR.PS-04",
+                "title": "Log Records Created and Protected"
+              },
+              {
+                "id": "PR.PS-05",
+                "title": "Installation and Execution of Unauthorized Software Prevented"
+              },
+              {
+                "id": "PR.PS-06",
+                "title": "Secure Software Development Practices Used"
+              }
+            ]
+          },
+          {
+            "prefix": "RC",
+            "controls": [
+              {
+                "id": "RC.CO-03",
+                "title": "Recovery Activities Communicated"
+              },
+              {
+                "id": "RC.CO-04",
+                "title": "Public Updates Issued"
+              },
+              {
+                "id": "RC.RP-01",
+                "title": "Recovery Plan Executed"
+              },
+              {
+                "id": "RC.RP-02",
+                "title": "Recovery Actions Selected"
+              },
+              {
+                "id": "RC.RP-03",
+                "title": "Integrity of Backups and Other Restoration Assets Verified"
+              },
+              {
+                "id": "RC.RP-04",
+                "title": "Critical Services Restored"
+              },
+              {
+                "id": "RC.RP-05",
+                "title": "Restoration Activities Verified"
+              },
+              {
+                "id": "RC.RP-06",
+                "title": "End of Incident Declared"
+              }
+            ]
+          },
+          {
+            "prefix": "RS",
+            "controls": [
+              {
+                "id": "RS.AN-03",
+                "title": "Analysis Performed to Determine What Occurred"
+              },
+              {
+                "id": "RS.AN-06",
+                "title": "Actions Performed During Investigation Cataloged"
+              },
+              {
+                "id": "RS.AN-07",
+                "title": "Incident Data and Metadata Collected"
+              },
+              {
+                "id": "RS.AN-08",
+                "title": "Magnitude of Incidents Estimated"
+              },
+              {
+                "id": "RS.CO-02",
+                "title": "Internal Stakeholders Notified"
+              },
+              {
+                "id": "RS.CO-03",
+                "title": "Information Shared with Designated Parties"
+              },
+              {
+                "id": "RS.MA-01",
+                "title": "Incident Response Plan Executed"
+              },
+              {
+                "id": "RS.MA-02",
+                "title": "Incident Reports Investigated"
+              },
+              {
+                "id": "RS.MA-03",
+                "title": "Incidents Categorized and Prioritized"
+              },
+              {
+                "id": "RS.MA-04",
+                "title": "Incidents Escalated or Elevated as Needed"
+              },
+              {
+                "id": "RS.MA-05",
+                "title": "Criteria for Initiating Incident Recovery Established"
+              },
+              {
+                "id": "RS.MI-01",
+                "title": "Incidents Contained"
+              },
+              {
+                "id": "RS.MI-02",
+                "title": "Incidents Eradicated"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

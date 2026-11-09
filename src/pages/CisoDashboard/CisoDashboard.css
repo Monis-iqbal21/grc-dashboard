@@ -323,11 +323,14 @@
   min-width: 0;
   align-items: center;
   justify-content: flex-end;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
 .ciso-severity {
   display: inline-flex;
+  max-width: 100%;
+  min-width: 0;
   min-height: 22px;
   align-items: center;
   justify-content: center;
@@ -336,8 +339,8 @@
   border-radius: var(--radius-pill);
   font-size: var(--font-size-tiny);
   font-weight: var(--font-weight-semibold);
-  line-height: 1;
-  white-space: nowrap;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
 }
 
 .ciso-severity--critical {

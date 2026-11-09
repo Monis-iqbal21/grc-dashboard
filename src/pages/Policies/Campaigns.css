@@ -27,8 +27,7 @@
   gap: 8px;
   padding: 0 0 14px;
 }
-.campaigns-search,
-.campaigns-select-wrap {
+.campaigns-search {
   display: flex;
   min-height: 36px;
   align-items: center;
@@ -40,8 +39,7 @@
   color: var(--text-muted, #677791);
 }
 .campaigns-search { flex: 1 1 205px; min-width: 160px; }
-.campaigns-search:focus-within,
-.campaigns-select-wrap:focus-within { border-color: var(--border-active, rgba(0, 112, 248, 0.38)); }
+.campaigns-search:focus-within { border-color: var(--border-active, rgba(0, 112, 248, 0.38)); }
 .campaigns-search input {
   width: 100%;
   min-width: 0;
@@ -54,20 +52,6 @@
   font-size: 11px;
 }
 .campaigns-search input::placeholder { color: var(--text-muted, #677791); opacity: 1; }
-.campaigns-select-wrap { flex: 0 0 auto; }
-.campaigns-select-wrap select {
-  max-width: 150px;
-  padding: 0 13px 0 0;
-  border: 0;
-  outline: 0;
-  background: transparent;
-  color: var(--text-secondary, #a9b6cc);
-  font: inherit;
-  font-size: 10px;
-  cursor: pointer;
-}
-.campaigns-sort-wrap select { max-width: 142px; }
-.campaigns-select-wrap option { background: var(--surface-2, #0b173c); color: var(--text-primary, #f4f7ff); }
 .campaigns-toolbar .policies-button { min-height: 36px; padding: 0 10px; font-size: 10px; }
 
 .campaign-summary {
@@ -144,6 +128,8 @@
 .campaign-row-title-line > strong { color: var(--text-primary, #f4f7ff); font-size: 11px; font-weight: 570; line-height: 1.4; }
 .campaign-status {
   display: inline-flex;
+  max-width: 100%;
+  min-width: 0;
   min-height: 21px;
   flex: none;
   align-items: center;
@@ -154,7 +140,7 @@
   font-size: 9px;
   font-weight: 550;
   line-height: 1.2;
-  white-space: nowrap;
+  overflow-wrap: anywhere;
 }
 .campaign-status--in-progress { border-color: rgba(0, 112, 248, 0.25); background: rgba(0, 112, 248, 0.085); color: #58a9ff; }
 .campaign-status--completed { border-color: rgba(22, 199, 132, 0.23); background: rgba(22, 199, 132, 0.075); color: var(--success, #16c784); }
@@ -265,8 +251,6 @@
   .campaigns-heading > .policies-button { width: 100%; }
   .campaigns-toolbar { align-items: stretch; }
   .campaigns-search { flex: 1 1 100%; min-height: 38px; }
-  .campaigns-select-wrap { flex: 1 1 calc(50% - 5px); min-height: 36px; }
-  .campaigns-select-wrap select { flex: 1; max-width: none; }
   .campaigns-toolbar > .policies-button { flex: 1 1 calc(50% - 5px); min-height: 36px; justify-content: center; }
   .campaign-summary { min-height: 0; }
   .campaign-summary-item { min-height: 67px; padding: 10px 12px; }

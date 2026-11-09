@@ -1,0 +1,67 @@
+export const auditModules = [
+  'Ai', 'Approvals', 'Assets', 'Auth', 'Capa', 'Controls', 'Evidence',
+  'Exceptions', 'Incidents', 'Monitoring', 'Org chart', 'Policies',
+  'Policy lifecycle', 'Procedures', 'Reports', 'Risks', 'Tasks',
+  'Vendor assessments', 'Vendors', 'Vulnerabilities',
+];
+
+export const auditActionFilters = [
+  { value: 'all', label: 'All Actions' },
+  { value: 'CREATE', label: 'Create' },
+  { value: 'UPDATE', label: 'Update' },
+  { value: 'DELETE', label: 'Delete' },
+  { value: 'LOGIN', label: 'Login' },
+  { value: 'LOGIN_FAILED', label: 'Failed Login' },
+  { value: 'LOGOUT', label: 'Logout' },
+  { value: 'EXPORT', label: 'Export' },
+  { value: 'STATUS_CHANGE', label: 'Status Change' },
+  { value: 'APPROVE', label: 'Approve' },
+  { value: 'NOTIFY', label: 'Notify' },
+];
+
+// Synthetic local examples only; no production audit records or user identities are copied here.
+export const auditUsers = [
+  'Demo Admin',
+  'Compliance Analyst',
+  'Risk Analyst',
+  'System (no actor)',
+];
+
+export const auditEntries = [
+  { id: 'evt-001', createdAt: '2026-11-09T09:14:00+05:00', user: 'Demo Admin', module: 'Auth', action: 'LOGIN', actionFilter: 'LOGIN', recordId: '4' },
+  { id: 'evt-002', createdAt: '2026-11-08T15:22:00+05:00', user: 'Demo Admin', module: 'Auth', action: 'LOGIN', actionFilter: 'LOGIN', recordId: '0' },
+  { id: 'evt-003', createdAt: '2026-11-07T11:05:00+05:00', user: 'Demo Admin', module: 'Auth', action: 'LOGIN', actionFilter: 'LOGIN', recordId: '3' },
+  { id: 'evt-004', createdAt: '2026-11-06T17:30:00+05:00', user: 'Compliance Analyst', module: 'Policies', action: 'CREATE', actionFilter: 'CREATE', recordId: '1' },
+  { id: 'evt-005', createdAt: '2026-11-06T17:28:00+05:00', user: 'Compliance Analyst', module: 'Policies', action: 'LINK CONTROL', actionFilter: 'UPDATE', recordId: '5' },
+  { id: 'evt-006', createdAt: '2026-11-06T16:44:00+05:00', user: 'Compliance Analyst', module: 'Policies', action: 'CREATE', actionFilter: 'CREATE', recordId: '2' },
+  { id: 'evt-007', createdAt: '2026-11-06T16:42:00+05:00', user: 'Compliance Analyst', module: 'Policies', action: 'LINK CONTROL', actionFilter: 'UPDATE', recordId: '4' },
+  { id: 'evt-008', createdAt: '2026-11-06T15:07:00+05:00', user: 'Compliance Analyst', module: 'Policies', action: 'CREATE', actionFilter: 'CREATE', recordId: '1' },
+  { id: 'evt-009', createdAt: '2026-11-05T13:17:00+05:00', user: 'Risk Analyst', module: 'Tasks', action: 'STATUS CHANGE', actionFilter: 'STATUS_CHANGE', recordId: '0' },
+  { id: 'evt-010', createdAt: '2026-11-05T13:15:00+05:00', user: 'Risk Analyst', module: 'Tasks', action: 'NOTIFY', actionFilter: 'NOTIFY', recordId: '5' },
+  { id: 'evt-011', createdAt: '2026-11-04T09:10:00+05:00', user: 'Demo Admin', module: 'Approvals', action: 'APPROVE', actionFilter: 'APPROVE', recordId: '2' },
+  { id: 'evt-012', createdAt: '2026-11-03T01:44:00+05:00', user: 'Compliance Analyst', module: 'Procedures', action: 'CREATE', actionFilter: 'CREATE', recordId: '3' },
+  { id: 'evt-013', createdAt: '2026-11-03T01:42:00+05:00', user: 'Risk Analyst', module: 'Risks', action: 'CREATE', actionFilter: 'CREATE', recordId: '0' },
+  { id: 'evt-014', createdAt: '2026-11-03T01:37:00+05:00', user: 'Risk Analyst', module: 'Risks', action: 'CREATE', actionFilter: 'CREATE', recordId: '4' },
+  { id: 'evt-015', createdAt: '2026-11-03T01:32:00+05:00', user: 'Risk Analyst', module: 'Risks', action: 'CREATE', actionFilter: 'CREATE', recordId: '2' },
+  { id: 'evt-016', createdAt: '2026-11-03T01:24:00+05:00', user: 'Risk Analyst', module: 'Vulnerabilities', action: 'CREATE', actionFilter: 'CREATE', recordId: '5' },
+  { id: 'evt-017', createdAt: '2026-11-03T01:20:00+05:00', user: 'Risk Analyst', module: 'Assets', action: 'CREATE', actionFilter: 'CREATE', recordId: '1' },
+  { id: 'evt-018', createdAt: '2026-11-02T14:20:00+05:00', user: 'Compliance Analyst', module: 'Vendor assessments', action: 'CREATE', actionFilter: 'CREATE', recordId: '3' },
+  { id: 'evt-019', createdAt: '2026-11-02T14:02:00+05:00', user: 'Compliance Analyst', module: 'Vendors', action: 'CREATE', actionFilter: 'CREATE', recordId: '4' },
+  { id: 'evt-020', createdAt: '2026-11-01T09:42:00+05:00', user: 'Compliance Analyst', module: 'Evidence', action: 'CREATE', actionFilter: 'CREATE', recordId: '0' },
+  { id: 'evt-021', createdAt: '2026-10-31T14:11:00+05:00', user: 'Compliance Analyst', module: 'Controls', action: 'STATUS CHANGE', actionFilter: 'STATUS_CHANGE', recordId: '2' },
+  { id: 'evt-022', createdAt: '2026-10-30T17:55:00+05:00', user: 'Demo Admin', module: 'Reports', action: 'EXPORT', actionFilter: 'EXPORT', recordId: '5' },
+  { id: 'evt-023', createdAt: '2026-10-30T17:50:00+05:00', user: 'Demo Admin', module: 'Ai', action: 'EXPORT', actionFilter: 'EXPORT', recordId: '1' },
+  { id: 'evt-024', createdAt: '2026-10-29T10:08:00+05:00', user: 'Risk Analyst', module: 'Assets', action: 'UPDATE', actionFilter: 'UPDATE', recordId: '3' },
+  { id: 'evt-025', createdAt: '2026-10-28T11:40:00+05:00', user: 'Risk Analyst', module: 'Risks', action: 'UPDATE APPETITE', actionFilter: 'UPDATE', recordId: '0' },
+  { id: 'evt-026', createdAt: '2026-10-27T16:50:00+05:00', user: 'System (no actor)', module: 'Risks', action: 'BREACH DETECTED', actionFilter: 'STATUS_CHANGE', recordId: '4' },
+  { id: 'evt-027', createdAt: '2026-10-27T16:42:00+05:00', user: 'System (no actor)', module: 'Risks', action: 'BREACH CLEARED', actionFilter: 'STATUS_CHANGE', recordId: '2' },
+  { id: 'evt-028', createdAt: '2026-10-26T05:24:00+05:00', user: 'Compliance Analyst', module: 'Policy lifecycle', action: 'STATUS CHANGE', actionFilter: 'STATUS_CHANGE', recordId: '5' },
+  { id: 'evt-029', createdAt: '2026-10-25T12:18:00+05:00', user: 'Risk Analyst', module: 'Exceptions', action: 'CREATE', actionFilter: 'CREATE', recordId: '1' },
+  { id: 'evt-030', createdAt: '2026-10-24T06:10:00+05:00', user: 'Compliance Analyst', module: 'Capa', action: 'CREATE', actionFilter: 'CREATE', recordId: '3' },
+  { id: 'evt-031', createdAt: '2026-10-23T07:34:00+05:00', user: 'System (no actor)', module: 'Monitoring', action: 'CREATE', actionFilter: 'CREATE', recordId: '0' },
+  { id: 'evt-032', createdAt: '2026-10-22T12:08:00+05:00', user: 'Risk Analyst', module: 'Incidents', action: 'CREATE', actionFilter: 'CREATE', recordId: '4' },
+  { id: 'evt-033', createdAt: '2026-10-21T06:22:00+05:00', user: 'Demo Admin', module: 'Auth', action: 'LOGIN FAILED', actionFilter: 'LOGIN_FAILED', recordId: '2' },
+  { id: 'evt-034', createdAt: '2026-10-20T15:35:00+05:00', user: 'Demo Admin', module: 'Auth', action: 'LOGOUT', actionFilter: 'LOGOUT', recordId: '5' },
+  { id: 'evt-035', createdAt: '2026-10-19T02:17:00+05:00', user: 'Risk Analyst', module: 'Tasks', action: 'DELETE', actionFilter: 'DELETE', recordId: '1' },
+  { id: 'evt-036', createdAt: '2026-10-18T17:32:00+05:00', user: 'Risk Analyst', module: 'Vulnerabilities', action: 'UPDATE', actionFilter: 'UPDATE', recordId: '3' },
+];

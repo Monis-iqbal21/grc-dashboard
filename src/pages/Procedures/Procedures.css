@@ -239,12 +239,12 @@
 .procedure-sort-button:hover { color: var(--text-primary); }
 .procedure-ref-link,
 .procedure-title-link { max-width: 100%; padding: 0; border: 0; background: transparent; text-align: left; cursor: pointer; }
-.procedure-ref-link { color: var(--blue-soft); font-family: var(--font-family-mono, monospace); font-size: var(--font-size-xs); white-space: nowrap; }
+.procedure-ref-link { max-width: 100%; color: var(--blue-soft); font-family: var(--font-family-mono, monospace); font-size: var(--font-size-xs); overflow-wrap: anywhere; }
 .procedure-title-link { color: var(--text-primary); font-size: var(--font-size-sm); font-weight: var(--font-weight-medium); }
 .procedure-ref-link:hover,
 .procedure-title-link:hover { text-decoration: underline; text-underline-offset: var(--space-1); }
 .procedure-governs { color: var(--text-primary); font-weight: var(--font-weight-medium); white-space: nowrap; }
-.procedure-status { display: inline-flex; min-height: 23px; align-items: center; padding: 0 var(--space-2); border: 1px solid var(--border-subtle); border-radius: var(--radius-pill); background: var(--surface-2); color: var(--text-secondary); font-size: var(--font-size-xs); font-weight: var(--font-weight-medium); white-space: nowrap; }
+.procedure-status { display: inline-flex; max-width: 100%; min-width: 0; min-height: 23px; align-items: center; padding: var(--space-1) var(--space-2); border: 1px solid var(--border-subtle); border-radius: var(--radius-pill); background: var(--surface-2); color: var(--text-secondary); font-size: var(--font-size-xs); font-weight: var(--font-weight-medium); line-height: 1.35; overflow-wrap: anywhere; }
 .procedure-status--draft { border-color: var(--border-active); background: var(--color-info-subtle); color: var(--blue-soft); }
 .procedure-severity-score { color: var(--text-secondary); font-size: var(--font-size-sm); white-space: nowrap; }
 .procedure-muted { color: var(--text-muted) !important; }

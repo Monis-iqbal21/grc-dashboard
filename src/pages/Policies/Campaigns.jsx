@@ -5,6 +5,7 @@ import { policiesData } from '../../data/policiesData.js';
 import NewCampaignModal from '../../components/policies/NewCampaignModal.jsx';
 import CampaignTracker from './CampaignTracker.jsx';
 import CampaignIntelligence from './CampaignIntelligence.jsx';
+import PolicyFilterDropdown from './PolicyFilterDropdown.jsx';
 import './Campaigns.css';
 
 const statusOptions = ['In Progress', 'Completed', 'Overdue', 'Draft'];
@@ -206,23 +207,29 @@ export default function Campaigns({ localCampaigns = [], onPrototypeAction, onCr
             placeholder="Search campaigns..."
           />
         </label>
-        <label className="campaigns-select-wrap">
-          <SlidersHorizontal aria-hidden="true" size={15} />
-          <span className="visually-hidden">Filter campaigns by status</span>
-          <select value={statusFilter} onChange={(event) => { setStatusFilter(event.target.value); setSelectedCampaignId(null); }}>
-            <option value="all">All campaigns</option>
-            {statusOptions.map((status) => <option key={status} value={status}>{status}</option>)}
-          </select>
-        </label>
-        <label className="campaigns-select-wrap campaigns-sort-wrap">
-          <span className="visually-hidden">Sort campaigns</span>
-          <select value={sortBy} onChange={(event) => setSortBy(event.target.value)}>
-            <option value="default">Sort by</option>
-            <option value="deadline">Deadline — Soonest</option>
-            <option value="status">Status</option>
-            <option value="completion">Completion Rate</option>
-          </select>
-        </label>
+        <PolicyFilterDropdown
+          className="policy-filter-dropdown--campaign-status"
+          label="Filter campaigns by status"
+          value={statusFilter}
+          icon={<SlidersHorizontal aria-hidden="true" size={15} />}
+          options={[
+            { value: 'all', label: 'All campaigns' },
+            ...statusOptions.map((status) => ({ value: status, label: status })),
+          ]}
+          onChange={(value) => { setStatusFilter(value); setSelectedCampaignId(null); }}
+        />
+        <PolicyFilterDropdown
+          className="policy-filter-dropdown--campaign-sort"
+          label="Sort campaigns"
+          value={sortBy}
+          options={[
+            { value: 'default', label: 'Sort by' },
+            { value: 'deadline', label: 'Deadline — Soonest' },
+            { value: 'status', label: 'Status' },
+            { value: 'completion', label: 'Completion Rate' },
+          ]}
+          onChange={setSortBy}
+        />
         <button className="policies-button policies-button--quiet" type="button" onClick={onPrototypeAction}>
           <ArrowDownToLine aria-hidden="true" size={15} /> Export Report
         </button>

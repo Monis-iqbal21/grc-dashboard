@@ -1,0 +1,378 @@
+{
+  "audit": {
+    "date": "2026-11-07",
+    "productionUrl": "https://app.nvector.io/procedures",
+    "method": "Authenticated production UI and accessibility tree; read-only inspection",
+    "productionWrites": false,
+    "localApplicationCodeChanges": false
+  },
+  "procedureList": {
+    "heading": "Procedures",
+    "summaryText": "1 open · 0 active · 1 drafts",
+    "counts": {
+      "records": 1,
+      "open": 1,
+      "active": 0,
+      "drafts": 1,
+      "underRevision": 0,
+      "pendingApproval": 0,
+      "reviewOverdue": 0,
+      "governanceGaps": 0,
+      "controlCoveragePercent": 0,
+      "controlCoverageText": "0 of 221 controls",
+      "runOutcomesText": "No completed runs yet"
+    },
+    "toolbarActions": [
+      "Coverage",
+      "Export",
+      "Settings",
+      "Import",
+      "Clone from skeleton",
+      "+ New procedure"
+    ],
+    "tableColumns": [
+      "REF", "TITLE", "TYPE", "STATUS", "GOVERNED BY",
+      "OWNER", "ACTIVE VERSION", "NEXT REVIEW", "SEVERITY"
+    ],
+    "quickFilters": [
+      "My procedures", "Under revision", "Review overdue",
+      "Governance gap", "Pending my approval"
+    ],
+    "statusOptions": [
+      "Any status", "Draft", "In review", "Approved (pending)",
+      "Active", "Active · Under revision", "Retired"
+    ],
+    "pagination": {
+      "text": "1–1 of 1",
+      "previousDisabled": true,
+      "nextDisabled": true
+    },
+    "records": [
+      {
+        "reference": "PRC-2026-0001",
+        "title": "Dummy - MFA enrolment for new staff",
+        "type": "Standard operating procedure",
+        "status": "Draft",
+        "governedBy": {
+          "reference": "HIPAA AC-01",
+          "kind": "Control"
+        },
+        "owner": "Demo Admin",
+        "activeVersion": "—",
+        "nextReview": "—",
+        "severity": {
+          "score": 6,
+          "label": "Medium",
+          "display": "6 · Medium"
+        },
+        "classification": "Internal",
+        "category": "—",
+        "trigger": "On demand",
+        "reviewCycle": "12 months",
+        "nextCycle": "—",
+        "taskGeneration": "Off",
+        "appliesToAllVendors": "No",
+        "created": "11/3/2026 by Demo Admin",
+        "submitted": "—",
+        "clonedFrom": "—",
+        "version": {
+          "label": "Unnumbered draft",
+          "status": "Draft",
+          "changeReason": "Initial version.",
+          "created": "11/3/2026 · Demo Admin"
+        },
+        "purpose": "Dummy procedure for demonstration. Not a real procedure.",
+        "scope": "All new joiners with system access.",
+        "prerequisites": "",
+        "exceptionsAndEscalation": "",
+        "changeSummary": "",
+        "steps": [
+          {
+            "order": 1,
+            "title": "Confirm joiner record exists in HR system",
+            "instructions": "Dummy step for demonstration.",
+            "performer": "HR Officer",
+            "system": "",
+            "expectedOutput": "Joiner record reference",
+            "mandatory": true,
+            "conditional": false,
+            "evidenceRequired": false
+          },
+          {
+            "order": 2,
+            "title": "Issue MFA token and register the device",
+            "instructions": "Dummy step for demonstration.",
+            "performer": "IT Service Desk",
+            "system": "",
+            "expectedOutput": "Token serial recorded",
+            "mandatory": true,
+            "conditional": false,
+            "evidenceRequired": false
+          },
+          {
+            "order": 3,
+            "title": "Verify first sign-in completes with MFA",
+            "instructions": "Dummy step for demonstration.",
+            "performer": "IT Service Desk",
+            "system": "",
+            "expectedOutput": "Sign-in log entry",
+            "mandatory": true,
+            "conditional": false,
+            "evidenceRequired": false
+          }
+        ],
+        "raciRoles": [],
+        "submitChecklist": [
+          "The RACI needs exactly one Accountable role (has 0).",
+          "Step 1's performer 'HR Officer' is not a Responsible (R) role in the RACI.",
+          "Step 2's performer 'IT Service Desk' is not a Responsible (R) role in the RACI.",
+          "Step 3's performer 'IT Service Desk' is not a Responsible (R) role in the RACI."
+        ]
+      }
+    ]
+  },
+  "coverage": {
+    "route": "/procedures/coverage",
+    "heading": "Procedure coverage",
+    "allControlsSummary": "1 of 221 controls carried out by a procedure",
+    "coveredOnlySummary": "1 of 1 controls carried out by a procedure",
+    "frameworks": [
+      {"name": "HIPAA", "controlCount": 115},
+      {"name": "NIST CSF 2.0", "controlCount": 106}
+    ],
+    "controlCount": 221,
+    "coveredControlCount": 1,
+    "categories": [
+      "Access Control",
+      "Asset Management & Hardening",
+      "Audit & Compliance",
+      "Business Continuity & DR",
+      "Change Management",
+      "Cryptography & Key Management",
+      "Data Handling & Classification",
+      "Human Resources",
+      "Incident Response",
+      "Logging & Monitoring",
+      "Physical Security",
+      "Privileged Access",
+      "Third-Party / Vendor",
+      "Vulnerability & Patch Management"
+    ],
+    "legend": [
+      "Active",
+      "Active · under revision",
+      "Draft · in review · approved",
+      "Governance gap",
+      "No procedure",
+      "Faded: inherited link"
+    ],
+    "coveredControls": [
+      {
+        "framework": "HIPAA",
+        "reference": "AC-01",
+        "title": "Multi-factor authentication for the cloud console (e.g., AWS)",
+        "procedureReference": "PRC-2026-0001",
+        "procedureTitle": "Dummy - MFA enrolment for new staff",
+        "coverageBadgeText": "AC-01 · PRC-2026-0001: Draft · in review · approved"
+      }
+    ],
+    "metricNote": "The list summary says 0 of 221, while Coverage says 1 of 221. The only relationship is to a Draft procedure; the UI does not state why the summaries differ."
+  },
+  "detailSections": {
+    "tabs": [
+      "Overview", "Steps", "Links 1", "Versions",
+      "Review triggers 0", "Tasks & runs 0", "Audit log"
+    ],
+    "overview": {
+      "notice": "This procedure is not yet in force: draft · Dummy - MFA enrolment for new staff Draft",
+      "heading": "Not yet in force",
+      "type": "Standard operating procedure",
+      "trigger": "On demand",
+      "created": "11/3/2026",
+      "submitted": "—",
+      "changeReason": "Initial version."
+    },
+    "links": [
+      {
+        "type": "CONTROL",
+        "count": 1,
+        "reference": "HIPAA AC-01",
+        "title": "Multi-factor authentication for the cloud console (e.g., AWS)",
+        "relationship": "Governed by"
+      }
+    ],
+    "versions": {
+      "count": 1,
+      "label": "Unnumbered draft",
+      "status": "Draft",
+      "reason": "Initial version.",
+      "created": "11/3/2026 · Demo Admin"
+    },
+    "reviewTriggers": {
+      "count": 0,
+      "openReviews": "No open reviews.",
+      "noChangeNeededText": "“No change needed” takes two people: the owner proposes it, then a GRC Manager who is not the owner confirms it.",
+      "history": "No resolved reviews yet."
+    },
+    "tasksAndRuns": {
+      "count": 0,
+      "runs": "No completed runs yet",
+      "generatedTasks": "Task generation is switched off for this procedure."
+    },
+    "auditLog": {
+      "tabPresent": true,
+      "entriesAccessible": false,
+      "note": "No rows or definitive empty-state message were exposed."
+    }
+  },
+  "forms": {
+    "newProcedure": {
+      "titleMinimumCharacters": 10,
+      "titleUnique": true,
+      "types": [
+        {
+          "label": "Standard operating procedure",
+          "description": "A recurring operational process",
+          "defaultGovernedBy": "Policy"
+        },
+        {
+          "label": "Runbook",
+          "description": "BCP/DR and technical runbooks; step SLAs matter",
+          "defaultGovernedBy": "Control"
+        },
+        {
+          "label": "Risk treatment",
+          "description": "Executed to mitigate a linked risk",
+          "defaultGovernedBy": "Risk"
+        },
+        {
+          "label": "Finding remediation",
+          "description": "Closes a linked audit finding",
+          "defaultGovernedBy": "Audit finding"
+        },
+        {
+          "label": "Vendor lifecycle",
+          "description": "Onboarding, reassessment, off-boarding",
+          "defaultGovernedBy": "Vendor",
+          "allVendorsCheckbox": "Applies to all vendors"
+        }
+      ],
+      "ownerOptions": ["Demo Admin (you)", "Maizah Kaleem", "Nimra Khan"],
+      "governedByOptions": [
+        "Policy", "Control", "Risk", "Audit finding",
+        "Vendor", "Asset type", "Risk exception"
+      ],
+      "triggerOptions": [
+        "On demand", "Scheduled", "Started by another module"
+      ],
+      "recurrenceOptions": [
+        "How often", "Once", "Daily", "Weekly", "Monthly",
+        "Quarterly", "Semi-annual", "Annual"
+      ],
+      "categoriesIncludeNoCategory": true,
+      "severity": {
+        "default": 6,
+        "displayRange": "1–25",
+        "helper": "1–25, banded like the risk register.",
+        "currentBandDisplay": "6 · Medium"
+      },
+      "classificationOptions": [
+        "Inherited — internal unless what governs it needs higher",
+        "Internal", "Confidential", "Restricted"
+      ],
+      "generateTasksDefault": false
+    },
+    "editDetails": {
+      "fields": [
+        "Owner", "Category", "Severity score", "Classification",
+        "Review cycle (months)", "Generate tasks", "Applies to all vendors"
+      ],
+      "classificationOptions": ["Internal", "Confidential", "Restricted"],
+      "classificationHelper": "Can be raised, never lowered.",
+      "reviewCycleMonthsDefault": 12,
+      "generateTasksDefault": false,
+      "appliesToAllVendorsDefault": false
+    },
+    "addLink": {
+      "linkTypes": [
+        "Policy", "Control", "Risk", "Audit finding",
+        "Vendor", "Asset type", "Risk exception"
+      ],
+      "makePrimaryCheckbox": "Make this the primary link",
+      "primaryHelper": "The primary link is what the procedure is shown as governed by.",
+      "blankControlLookupResult": "Searching…"
+    },
+    "draftVersionDetails": {
+      "fields": [
+        "Title", "Procedure type", "Trigger", "Purpose", "Scope",
+        "Prerequisites", "Exceptions & escalation", "Change reason", "Change summary"
+      ],
+      "purposeMinimumCharacters": 30,
+      "changeSummaryHelper": "Optional on a first version."
+    },
+    "raci": {
+      "fields": ["Role", "RACI", "Default assignee"],
+      "raciOptions": [
+        "R · Responsible", "A · Accountable", "C · Consulted", "I · Informed"
+      ],
+      "defaultAssigneeOptions": [
+        "No default", "Demo Admin", "Maizah Kaleem", "Nimra Khan"
+      ],
+      "validation": "The RACI needs exactly one Accountable (A) role."
+    },
+    "stepEditor": {
+      "fields": [
+        "Title", "Instructions", "Performer", "System", "Expected output",
+        "Mandatory", "Conditional step", "Evidence required"
+      ],
+      "performerRestriction": "Limited to the RACI's Responsible (R) roles.",
+      "noResponsibleRoleMessage": "Add an R role to the RACI first",
+      "conditionalFields": ["Applies when"],
+      "appliesWhenHelper": "0/500 characters, at least 10.",
+      "evidenceFields": ["Evidence type", "Evidence description"],
+      "evidenceTypeOptions": [
+        "Screenshot", "Export", "Signed form", "Report",
+        "Log extract", "Attestation", "Other"
+      ]
+    },
+    "import": {
+      "title": "Import procedures",
+      "requiredCsvColumns": [
+        "Title", "Type", "Owner", "Governed by type", "Governed by"
+      ],
+      "scheduledNeedsColumn": "Recurrence",
+      "actions": ["CSV file", "Download template", "Cancel", "Check file"],
+      "behaviorText": "Columns are matched by name in any order. Every row becomes a draft; nothing is activated by an import."
+    },
+    "cloneFromSkeleton": {
+      "skeletonAvailability": "No skeletons have been installed for your organisation.",
+      "fields": ["Title", "Owner", "Governed by", "Primary link"],
+      "actions": ["Cancel", "Clone"]
+    },
+    "reassignOwner": {
+      "fields": ["New owner"],
+      "actions": ["Cancel", "Reassign"],
+      "noWritePerformed": true
+    },
+    "settings": {
+      "reviewDueWithinDays": 30,
+      "governanceGapGraceDays": 30,
+      "ownerReassignmentDays": 7,
+      "longestReviewCycleMonths": 12,
+      "allowSingleGrcUserSelfApproval": false,
+      "secondPersonConfirmsNotApplicableOnCriticalProcedures": false
+    },
+    "export": [
+      {"format": "CSV", "description": "Opens in Excel, Sheets and data tools"},
+      {"format": "PDF", "description": "For sharing and printing"},
+      {"format": "HTML", "description": "Opens in a browser, rows expand"}
+    ]
+  },
+  "limitations": [
+    "Only one Draft demonstration record was visible; other lifecycle states and completed runs were not available to inspect.",
+    "Blank linked-record search results did not load, so target-record options are not exhaustive.",
+    "Write operations and potentially destructive actions were not executed.",
+    "Audit log rows or a definitive empty state were not accessible.",
+    "The 220 uncovered control titles were not copied into this procedure-focused JSON dataset."
+  ]
+}

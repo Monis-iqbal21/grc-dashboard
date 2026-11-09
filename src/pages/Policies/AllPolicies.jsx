@@ -1,6 +1,6 @@
-import { useId } from 'react';
 import { ChevronLeft, ChevronRight, FileText, MoreHorizontal, Search, SlidersHorizontal } from 'lucide-react';
 import PolicyPreview from './PolicyPreview.jsx';
+import PolicyFilterDropdown from './PolicyFilterDropdown.jsx';
 import { getPolicyStatusPresentation } from '../../data/policyStatusPresentation.js';
 
 const unavailable = '—';
@@ -22,7 +22,6 @@ export default function AllPolicies({
   pageCount,
   pageSize,
 }) {
-  const statusId = useId();
   const firstResult = filteredPolicies.length ? (currentPage - 1) * pageSize + 1 : 0;
   const lastResult = Math.min(currentPage * pageSize, filteredPolicies.length);
 
@@ -48,16 +47,20 @@ export default function AllPolicies({
               placeholder="Search policies..."
             />
           </label>
-          <label className="policy-status-filter" htmlFor={statusId}>
-            <SlidersHorizontal aria-hidden="true" size={15} />
-            <span className="visually-hidden">Filter by status</span>
-            <select id={statusId} value={statusFilter} onChange={(event) => onStatusChange(event.target.value)}>
-              <option value="all">All statuses</option>
-              {availableStatuses.map((status) => (
-                <option key={status} value={status}>{getPolicyStatusPresentation(status).label}</option>
-              ))}
-            </select>
-          </label>
+          <PolicyFilterDropdown
+            className="policy-status-filter"
+            label="Filter by status"
+            value={statusFilter}
+            icon={<SlidersHorizontal aria-hidden="true" size={15} />}
+            options={[
+              { value: 'all', label: 'All statuses' },
+              ...availableStatuses.map((status) => ({
+                value: status,
+                label: getPolicyStatusPresentation(status).label,
+              })),
+            ]}
+            onChange={onStatusChange}
+          />
         </div>
 
         {filteredPolicies.length ? (
